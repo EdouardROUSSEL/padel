@@ -4,7 +4,7 @@ import { FRANCE_GRID, MAIN_CITIES } from "@/lib/scrapers/grid";
 import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 
-export const maxDuration = 600;
+export const maxDuration = 300;
 export const dynamic = "force-dynamic";
 
 const RAW_DIR = path.join(process.cwd(), "data", "raw");
