@@ -1,0 +1,3562 @@
+{
+  "scrapedAt": "2026-02-26T18:02:33.919Z",
+  "source": "tenup",
+  "total": 199,
+  "courts": [
+    {
+      "id": "tenup_60660678",
+      "tenupId": "60660678",
+      "name": "TENNIS CLUB DU VALLESPIR MAUREILLAS",
+      "address": " , Avenue Joan CAYROL",
+      "city": "MAUREILLAS LAS ILLAS",
+      "postalCode": "66480",
+      "country": "FR",
+      "lat": 42.49430847167969,
+      "lng": 2.8015849590301514,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0468830099"
+    },
+    {
+      "id": "tenup_60658001",
+      "tenupId": "60658001",
+      "name": "CENTRE DEPARTEMENTAL DE PADEL DE HORGUES",
+      "address": "Rue de l'Agriculture",
+      "city": "HORGUES",
+      "postalCode": "65310",
+      "country": "FR",
+      "lat": 43.18582534790039,
+      "lng": 0.08003400266170502,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_60650737",
+      "tenupId": "60650737",
+      "name": "TENNIS CLUB PYRENEES BIGORRE",
+      "address": "3 Chemin Saint Ferreol",
+      "city": "CHIS",
+      "postalCode": "65800",
+      "country": "FR",
+      "lat": 43.29338455200195,
+      "lng": 0.11171799898147583,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0661758149"
+    },
+    {
+      "id": "tenup_60310190",
+      "tenupId": "60310190",
+      "name": "LABARTHE RIVIERE TENNIS  CLUB",
+      "address": "",
+      "city": "LABARTHE RIVIERE",
+      "postalCode": "31800",
+      "country": "FR",
+      "lat": 43.080467224121094,
+      "lng": 0.6714119911193848,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0613395998"
+    },
+    {
+      "id": "tenup_60310099",
+      "tenupId": "60310099",
+      "name": "SAINT GAUDENS TENNIS CLUB",
+      "address": "Stade Municipal, 60 Avenue de l' Isle",
+      "city": "SAINT GAUDENS",
+      "postalCode": "31800",
+      "country": "FR",
+      "lat": 43.11467742919922,
+      "lng": 0.726203978061676,
+      "totalCourts": 1,
+      "indoorCourts": 1,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0745050745"
+    },
+    {
+      "id": "tenup_60L00090",
+      "tenupId": "60L00090",
+      "name": "COMITE ARIEGE TENNIS",
+      "address": "plaine de l'Ayroule",
+      "city": "FOIX",
+      "postalCode": "09000",
+      "country": "FR",
+      "lat": 42.96412658691406,
+      "lng": 1.6052320003509521,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_60090427",
+      "tenupId": "60090427",
+      "name": "MIREPOIX TENNIS CLUB",
+      "address": "Camping Municipal",
+      "city": "MIREPOIX",
+      "postalCode": "09500",
+      "country": "FR",
+      "lat": 43.088226318359375,
+      "lng": 1.8737250566482544,
+      "totalCourts": 1,
+      "indoorCourts": 1,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_60110026",
+      "tenupId": "60110026",
+      "name": "TENNIS CLUB DE LIMOUX",
+      "address": "rue des violettes",
+      "city": "LIMOUX",
+      "postalCode": "11300",
+      "country": "FR",
+      "lat": 43.04707336425781,
+      "lng": 2.223841905593872,
+      "totalCourts": 8,
+      "indoorCourts": 8,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0782710197"
+    },
+    {
+      "id": "tenup_60110683",
+      "tenupId": "60110683",
+      "name": "TENNIS CLUB LE BRIOLET",
+      "address": "stade municipal",
+      "city": "PALAJA",
+      "postalCode": "11570",
+      "country": "FR",
+      "lat": 43.1708984375,
+      "lng": 2.386596918106079,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_60110126",
+      "tenupId": "60110126",
+      "name": "SIGEAN TENNIS CLUB",
+      "address": "Chateau de lastours",
+      "city": "PORTEL DES CORBIERES",
+      "postalCode": "11490",
+      "country": "FR",
+      "lat": 43.04689025878906,
+      "lng": 2.900239944458008,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0468486474"
+    },
+    {
+      "id": "tenup_60340390",
+      "tenupId": "60340390",
+      "name": "VALRAS TENNIS/PADEL",
+      "address": "Cami De Canto Rano",
+      "city": "VALRAS",
+      "postalCode": "34350",
+      "country": "FR",
+      "lat": 43.24905776977539,
+      "lng": 3.285728931427002,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0467396447"
+    },
+    {
+      "id": "tenup_62130564",
+      "tenupId": "62130564",
+      "name": "AS TENNIS LA CIOTAT/CEYRESTE",
+      "address": "Avenue Eugène Julien, Les Devens",
+      "city": "CEYRESTE",
+      "postalCode": "13600",
+      "country": "FR",
+      "lat": 43.221500396728516,
+      "lng": 5.634810924530029,
+      "totalCourts": 4,
+      "indoorCourts": 0,
+      "outdoorCourts": 4,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0662296254"
+    },
+    {
+      "id": "tenup_62830050",
+      "tenupId": "62830050",
+      "name": "TC SAINT CYRIEN",
+      "address": "Super Lecques, 238 Chemin de Sorba",
+      "city": "SAINT CYR SUR MER",
+      "postalCode": "83270",
+      "country": "FR",
+      "lat": 43.184322357177734,
+      "lng": 5.683193206787109,
+      "totalCourts": 6,
+      "indoorCourts": 0,
+      "outdoorCourts": 6,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0494261354"
+    },
+    {
+      "id": "tenup_62130274",
+      "tenupId": "62130274",
+      "name": "TENNIS CLUB DE GEMENOS",
+      "address": "161 CHEMIN DU PUITS",
+      "city": "GEMENOS",
+      "postalCode": "13420",
+      "country": "FR",
+      "lat": 43.28804016113281,
+      "lng": 5.617297172546387,
+      "totalCourts": 5,
+      "indoorCourts": 0,
+      "outdoorCourts": 5,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0442328490"
+    },
+    {
+      "id": "tenup_62830183",
+      "tenupId": "62830183",
+      "name": "TC RAMATUELLOIS - section",
+      "address": "54 CHEMIN DU TENNIS",
+      "city": "RAMATUELLE",
+      "postalCode": "83350",
+      "country": "FR",
+      "lat": 43.21522903442383,
+      "lng": 6.616335868835449,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0494792938"
+    },
+    {
+      "id": "tenup_62830257",
+      "tenupId": "62830257",
+      "name": "TCM DE PUGET VILLE",
+      "address": "Montée du Felibrige",
+      "city": "PUGET VILLE",
+      "postalCode": "83390",
+      "country": "FR",
+      "lat": 43.29300308227539,
+      "lng": 6.1359968185424805,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0749817782"
+    },
+    {
+      "id": "tenup_59400086",
+      "tenupId": "59400086",
+      "name": "SAINT MARTIN DE SEIGNANX TC",
+      "address": "2 bis Avenue Côte d'Argent",
+      "city": "ST MARTIN DE SEIGNANX",
+      "postalCode": "40390",
+      "country": "FR",
+      "lat": 43.543121337890625,
+      "lng": -1.3905099630355835,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0768978714"
+    },
+    {
+      "id": "tenup_59400233",
+      "tenupId": "59400233",
+      "name": "CAPBRETON GAILLOU TC",
+      "address": "Avenue du Gaillou",
+      "city": "CAPBRETON",
+      "postalCode": "40130",
+      "country": "FR",
+      "lat": 43.631961822509766,
+      "lng": -1.4266899824142456,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0678121244"
+    },
+    {
+      "id": "tenup_60650034",
+      "tenupId": "60650034",
+      "name": "MAUBOURGUET TENNIS CLUB",
+      "address": "",
+      "city": "LAHITTE TOUPIERE",
+      "postalCode": "65700",
+      "country": "FR",
+      "lat": 43.45515060424805,
+      "lng": -0.015149000100791454,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_60650122",
+      "tenupId": "60650122",
+      "name": "VIC BIGORRE TENNIS CLUB",
+      "address": "Stade Municipal, route de Pau",
+      "city": "VIC BIGORRE",
+      "postalCode": "65500",
+      "country": "FR",
+      "lat": 43.38540267944336,
+      "lng": 0.04801899939775467,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0562316327"
+    },
+    {
+      "id": "tenup_60320016",
+      "tenupId": "60320016",
+      "name": "AUCH TENNIS CLUB",
+      "address": "Bassin de Lescat, Rue de Barran",
+      "city": "AUCH",
+      "postalCode": "32000",
+      "country": "FR",
+      "lat": 43.641014099121094,
+      "lng": 0.5790370106697083,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0562050648"
+    },
+    {
+      "id": "tenup_60320171",
+      "tenupId": "60320171",
+      "name": "TENNIS CLUB DE LA SAVE",
+      "address": "Bld de la Chaussée",
+      "city": "SAMATAN",
+      "postalCode": "32130",
+      "country": "FR",
+      "lat": 43.492431640625,
+      "lng": 0.930383026599884,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0619151916"
+    },
+    {
+      "id": "tenup_60310451",
+      "tenupId": "60310451",
+      "name": "FONSORBES TENNIS CLUB",
+      "address": "rue Luigi Amadio",
+      "city": "FONSORBES",
+      "postalCode": "31470",
+      "country": "FR",
+      "lat": 43.53303909301758,
+      "lng": 1.2361990213394165,
+      "totalCourts": 1,
+      "indoorCourts": 1,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0561912537"
+    },
+    {
+      "id": "tenup_60310066",
+      "tenupId": "60310066",
+      "name": "CUGNAUX J.S TENNIS CLUB",
+      "address": "Courts Municipaux, 22 ter rue du Stade",
+      "city": "CUGNAUX",
+      "postalCode": "31270",
+      "country": "FR",
+      "lat": 43.540164947509766,
+      "lng": 1.3502449989318848,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0561921733"
+    },
+    {
+      "id": "tenup_60310304",
+      "tenupId": "60310304",
+      "name": "BLAGNAC TENNIS CLUB",
+      "address": "11 avenue des Tilleuls",
+      "city": "BLAGNAC",
+      "postalCode": "31700",
+      "country": "FR",
+      "lat": 43.63365173339844,
+      "lng": 1.3807179927825928,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0561712424"
+    },
+    {
+      "id": "tenup_60810256",
+      "tenupId": "60810256",
+      "name": "LABASTIDE T.C BASTIDIEN",
+      "address": "",
+      "city": "LABASTIDE SAINT GEORGES",
+      "postalCode": "81500",
+      "country": "FR",
+      "lat": 43.701820373535156,
+      "lng": 1.84402596950531,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_60340280",
+      "tenupId": "60340280",
+      "name": "TENNIS PADEL CLUB ST GEORGES D'ORQUES",
+      "address": "6 Allée Samuel PATY",
+      "city": "SAINT GEORGES D'ORQUES",
+      "postalCode": "34680",
+      "country": "FR",
+      "lat": 43.60689926147461,
+      "lng": 3.785356044769287,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0467529903"
+    },
+    {
+      "id": "tenup_60340451",
+      "tenupId": "60340451",
+      "name": "TC MONTFERRIER SUR LEZ",
+      "address": "Chemin des Tennis",
+      "city": "MONTFERRIER SUR LEZ",
+      "postalCode": "34980",
+      "country": "FR",
+      "lat": 43.67385482788086,
+      "lng": 3.8580589294433594,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0467598800"
+    },
+    {
+      "id": "tenup_60340463",
+      "tenupId": "60340463",
+      "name": "TENNIS & PADEL CLUB DE CASTRIES",
+      "address": "297 chemin de Fondespierre",
+      "city": "CASTRIES",
+      "postalCode": "34160",
+      "country": "FR",
+      "lat": 43.69387435913086,
+      "lng": 3.993844985961914,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0467873510"
+    },
+    {
+      "id": "tenup_60300106",
+      "tenupId": "60300106",
+      "name": "TC VAUVERT",
+      "address": "Complexe sportif René Girard, Avenue Robert Gourdon",
+      "city": "VAUVERT",
+      "postalCode": "30600",
+      "country": "FR",
+      "lat": 43.699989318847656,
+      "lng": 4.270876884460449,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0622569546"
+    },
+    {
+      "id": "tenup_62130219",
+      "tenupId": "62130219",
+      "name": "TENNIS CLUB MUN.THOLONET",
+      "address": "721 Avenue Louis Philibert",
+      "city": "LE THOLONET",
+      "postalCode": "13100",
+      "country": "FR",
+      "lat": 43.51686477661133,
+      "lng": 5.502212047576904,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0442669703"
+    },
+    {
+      "id": "tenup_62L01000",
+      "tenupId": "62L01000",
+      "name": "LIGUE PROVENCE-ALPES-COTE D'AZUR",
+      "address": "1175, Ch des Cruyes - Celony",
+      "city": "AIX EN PROVENCE",
+      "postalCode": "13090",
+      "country": "FR",
+      "lat": 43.568702697753906,
+      "lng": 5.418491840362549,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0442281940"
+    },
+    {
+      "id": "tenup_62130559",
+      "tenupId": "62130559",
+      "name": "TRETS TENNIS CLUB",
+      "address": "COMPLEXE SPORTIF, LA GARDI",
+      "city": "TRETS",
+      "postalCode": "13530",
+      "country": "FR",
+      "lat": 43.44516372680664,
+      "lng": 5.700551986694336,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0781520782"
+    },
+    {
+      "id": "tenup_62830111",
+      "tenupId": "62830111",
+      "name": "TC PUGETOIS",
+      "address": "Boulevard Martinez",
+      "city": "PUGET SUR ARGENS",
+      "postalCode": "83480",
+      "country": "FR",
+      "lat": 43.45532989501953,
+      "lng": 6.684080123901367,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0494456589"
+    },
+    {
+      "id": "tenup_62830204",
+      "tenupId": "62830204",
+      "name": "TC ROQUEBRUNE",
+      "address": "RD 559",
+      "city": "LES ISSAMBRES",
+      "postalCode": "83380",
+      "country": "FR",
+      "lat": 43.3460807800293,
+      "lng": 6.712596893310547,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0494811744"
+    },
+    {
+      "id": "tenup_62830347",
+      "tenupId": "62830347",
+      "name": "PADEL TENNIS CLUB DES ADRETS",
+      "address": "475 Route de l’église ",
+      "city": "LES ADRETS DE L'ESTEREL",
+      "postalCode": "83600",
+      "country": "FR",
+      "lat": 43.529136657714844,
+      "lng": 6.826979160308838,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0652679475"
+    },
+    {
+      "id": "tenup_59400041",
+      "tenupId": "59400041",
+      "name": "SOUSTONS AS",
+      "address": "Plaine l'Isle Verte, Rue du collège",
+      "city": "SOUSTONS",
+      "postalCode": "40140",
+      "country": "FR",
+      "lat": 43.75379180908203,
+      "lng": -1.3334800004959106,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_59400087",
+      "tenupId": "59400087",
+      "name": "TYROSSE US",
+      "address": "Plaine des Sports Burry, 26 Voie Romaine",
+      "city": "ST VINCENT DE TYROSSE",
+      "postalCode": "40230",
+      "country": "FR",
+      "lat": 43.67496109008789,
+      "lng": -1.2877579927444458,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0630235149"
+    },
+    {
+      "id": "tenup_59400048",
+      "tenupId": "59400048",
+      "name": "CASTETS 40 TC",
+      "address": "Route du Stade Municipal",
+      "city": "CASTETS",
+      "postalCode": "40260",
+      "country": "FR",
+      "lat": 43.87934875488281,
+      "lng": -1.1376999616622925,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0558894839"
+    },
+    {
+      "id": "tenup_60320021",
+      "tenupId": "60320021",
+      "name": "NOGARO-LE HOUGA TENNIS CLUB",
+      "address": "Stade Municipal",
+      "city": "NOGARO",
+      "postalCode": "32110",
+      "country": "FR",
+      "lat": 43.77103042602539,
+      "lng": -0.031266000121831894,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0562091554"
+    },
+    {
+      "id": "tenup_60320018",
+      "tenupId": "60320018",
+      "name": "EAUZE TENNIS CLUB",
+      "address": "Stade Municipal",
+      "city": "EAUZE",
+      "postalCode": "32800",
+      "country": "FR",
+      "lat": 43.86151123046875,
+      "lng": 0.10747899860143661,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0562099506"
+    },
+    {
+      "id": "tenup_60320259",
+      "tenupId": "60320259",
+      "name": "MAUVEZIN TENNIS CLUB",
+      "address": "Stade Municipal",
+      "city": "MAUVEZIN",
+      "postalCode": "32120",
+      "country": "FR",
+      "lat": 43.73044967651367,
+      "lng": 0.8771380186080933,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0562068638"
+    },
+    {
+      "id": "tenup_60310156",
+      "tenupId": "60310156",
+      "name": "GRENADE TENNIS CLUB",
+      "address": "Stade Municipal, avenue de Gascogne",
+      "city": "GRENADE SUR GARONNE",
+      "postalCode": "31330",
+      "country": "FR",
+      "lat": 43.721858978271484,
+      "lng": 1.2291829586029053,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0615747342"
+    },
+    {
+      "id": "tenup_60810045",
+      "tenupId": "60810045",
+      "name": "CARMAUX U.S TENNIS CLUB",
+      "address": "Lendrevie",
+      "city": "BLAYE LES MINES",
+      "postalCode": "81400",
+      "country": "FR",
+      "lat": 44.04371643066406,
+      "lng": 2.1506760120391846,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0563368255"
+    },
+    {
+      "id": "tenup_62840484",
+      "tenupId": "62840484",
+      "name": "T.C CHEVALBLANAIS",
+      "address": "Stade",
+      "city": "CHEVAL-BLANC",
+      "postalCode": "84460",
+      "country": "FR",
+      "lat": 43.83637619018555,
+      "lng": 5.095726013183594,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0490719717"
+    },
+    {
+      "id": "tenup_62840199",
+      "tenupId": "62840199",
+      "name": "TENNIS CLUB ST-DIDIER",
+      "address": "chemin de saint geniez",
+      "city": "ST DIDIER",
+      "postalCode": "84210",
+      "country": "FR",
+      "lat": 44.00910949707031,
+      "lng": 5.109394073486328,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0769384784"
+    },
+    {
+      "id": "tenup_62848004",
+      "tenupId": "62848004",
+      "name": "SANCHEZ PADEL LUBERON ",
+      "address": "LE PLAN D'EAU, AVENUE FREDERIC MISTRAL",
+      "city": "APT",
+      "postalCode": "84400",
+      "country": "FR",
+      "lat": 43.89288330078125,
+      "lng": 5.376589775085449,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0608323904"
+    },
+    {
+      "id": "tenup_62060068",
+      "tenupId": "62060068",
+      "name": "GSEM TENNIS",
+      "address": "Chemin du Cimetière de l'Est",
+      "city": "NICE",
+      "postalCode": "06300",
+      "country": "FR",
+      "lat": 43.74443054199219,
+      "lng": 7.30299711227417,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0493919046"
+    },
+    {
+      "id": "tenup_59400030",
+      "tenupId": "59400030",
+      "name": "MIMIZAN TC",
+      "address": "5 avenue de leslurgues",
+      "city": "MIMIZAN",
+      "postalCode": "40200",
+      "country": "FR",
+      "lat": 44.20560836791992,
+      "lng": -1.2716599702835083,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0745124043"
+    },
+    {
+      "id": "tenup_59400078",
+      "tenupId": "59400078",
+      "name": "LABOUHEYRE TENNIS PADEL",
+      "address": "160 rue du parc des sports",
+      "city": "LABOUHEYRE",
+      "postalCode": "40210",
+      "country": "FR",
+      "lat": 44.19205093383789,
+      "lng": -0.9168499708175659,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0676297580"
+    },
+    {
+      "id": "tenup_59470183",
+      "tenupId": "59470183",
+      "name": "PASSAGE AS",
+      "address": "AS Passage Tennis, Avenue de Verdun",
+      "city": "LE PASSAGE",
+      "postalCode": "47520",
+      "country": "FR",
+      "lat": 44.19150924682617,
+      "lng": 0.6048200130462646,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0553876285"
+    },
+    {
+      "id": "tenup_59470110",
+      "tenupId": "59470110",
+      "name": "TENNIS PADEL VILLENEUVOIS",
+      "address": "stade de la myre mory, route d'Agen",
+      "city": "VILLENEUVE SUR LOT",
+      "postalCode": "47300",
+      "country": "FR",
+      "lat": 44.393985748291016,
+      "lng": 0.7092419862747192,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0553704878"
+    },
+    {
+      "id": "tenup_60820055",
+      "tenupId": "60820055",
+      "name": "TENNIS QUERCY CAUSSADAIS",
+      "address": "47 Avenue Maréchal de Lattre de Tassigny",
+      "city": "CAUSSADE",
+      "postalCode": "82300",
+      "country": "FR",
+      "lat": 44.157997131347656,
+      "lng": 1.542130947113037,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0625633606"
+    },
+    {
+      "id": "tenup_60300388",
+      "tenupId": "60300388",
+      "name": "TC BARJAC",
+      "address": "Complexe Sportif Pierre Pascal, Route D'Alès",
+      "city": "BARJAC",
+      "postalCode": "30430",
+      "country": "FR",
+      "lat": 44.30226516723633,
+      "lng": 4.343367099761963,
+      "totalCourts": 1,
+      "indoorCourts": 1,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50260009",
+      "tenupId": "50260009",
+      "name": "PIERRELATTE TC",
+      "address": "avenue  pierre de coubertin",
+      "city": "PIERRELATTE",
+      "postalCode": "26700",
+      "country": "FR",
+      "lat": 44.365055084228516,
+      "lng": 4.6985931396484375,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0475041248"
+    },
+    {
+      "id": "tenup_62848003",
+      "tenupId": "62848003",
+      "name": "RASTEAU PADEL CLUB",
+      "address": "Chemin de la Garriguette",
+      "city": "Rasteau",
+      "postalCode": "84110",
+      "country": "FR",
+      "lat": 44.2240104675293,
+      "lng": 4.979856967926025,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0761236331"
+    },
+    {
+      "id": "tenup_50260615",
+      "tenupId": "50260615",
+      "name": "MIRABEL PIEGON TENNIS CLUB",
+      "address": "Route de Villedieu",
+      "city": "MIRABEL AUX BARONNIES",
+      "postalCode": "26110",
+      "country": "FR",
+      "lat": 44.30345153808594,
+      "lng": 5.05658483505249,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50260234",
+      "tenupId": "50260234",
+      "name": "NYONS TC",
+      "address": "76 promenade de la digue",
+      "city": "NYONS",
+      "postalCode": "26110",
+      "country": "FR",
+      "lat": 44.35565185546875,
+      "lng": 5.13412618637085,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0475260870"
+    },
+    {
+      "id": "tenup_59400261",
+      "tenupId": "59400261",
+      "name": "BISCARROSSE OLYMPIQUE TC",
+      "address": "1359, avenue du Pyla",
+      "city": "BISCARROSSE PLAGE",
+      "postalCode": "40600",
+      "country": "FR",
+      "lat": 44.45269012451172,
+      "lng": -1.2387020587921143,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0558782067"
+    },
+    {
+      "id": "tenup_59330349",
+      "tenupId": "59330349",
+      "name": "CAZAUX TC",
+      "address": "68 rue Raymond Sanchez",
+      "city": "CAZAUX",
+      "postalCode": "33260",
+      "country": "FR",
+      "lat": 44.54608917236328,
+      "lng": -1.1469630002975464,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0646280407"
+    },
+    {
+      "id": "tenup_59330122",
+      "tenupId": "59330122",
+      "name": "MIOS US",
+      "address": "Impasse des Colibris",
+      "city": "MIOS",
+      "postalCode": "33380",
+      "country": "FR",
+      "lat": 44.60538864135742,
+      "lng": -0.9396250247955322,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0632381751"
+    },
+    {
+      "id": "tenup_59330120",
+      "tenupId": "59330120",
+      "name": "LEGE CAP FERRET TC",
+      "address": "24 av Edouard Branly",
+      "city": "LEGE CAP FERRET",
+      "postalCode": "33950",
+      "country": "FR",
+      "lat": 44.751197814941406,
+      "lng": -1.1835700273513794,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0556607493"
+    },
+    {
+      "id": "tenup_59330090",
+      "tenupId": "59330090",
+      "name": "LANGON TC",
+      "address": "avenue des resistants",
+      "city": "LANGON",
+      "postalCode": "33210",
+      "country": "FR",
+      "lat": 44.54777145385742,
+      "lng": -0.2522760033607483,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0633168121"
+    },
+    {
+      "id": "tenup_59330726",
+      "tenupId": "59330726",
+      "name": "SAINT LEON PADEL CLUB",
+      "address": "14 route de Mondon",
+      "city": "SAINT-LEON",
+      "postalCode": "33670",
+      "country": "FR",
+      "lat": 44.76900863647461,
+      "lng": -0.2724910080432892,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0619646324"
+    },
+    {
+      "id": "tenup_60480199",
+      "tenupId": "60480199",
+      "name": "TC CANOURGUAIS",
+      "address": "la curee",
+      "city": "LA CANOURGUE",
+      "postalCode": "48500",
+      "country": "FR",
+      "lat": 44.43125915527344,
+      "lng": 3.221189022064209,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0466329858"
+    },
+    {
+      "id": "tenup_50070209",
+      "tenupId": "50070209",
+      "name": "JOYEUSE-LAURAC TC",
+      "address": "907 Route de Ribes",
+      "city": "RIBES",
+      "postalCode": "07260",
+      "country": "FR",
+      "lat": 44.491390228271484,
+      "lng": 4.20986795425415,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0645466116"
+    },
+    {
+      "id": "tenup_59330117",
+      "tenupId": "59330117",
+      "name": "CENON US",
+      "address": "3 allée Simone Bouluguet",
+      "city": "CENON",
+      "postalCode": "33150",
+      "country": "FR",
+      "lat": 44.858455657958984,
+      "lng": -0.525629997253418,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0556863020"
+    },
+    {
+      "id": "tenup_59240525",
+      "tenupId": "59240525",
+      "name": "BERGERAC TC",
+      "address": "CHEMIN DE LA FONDAURADE",
+      "city": "BERGERAC",
+      "postalCode": "24100",
+      "country": "FR",
+      "lat": 44.83972930908203,
+      "lng": 0.49848300218582153,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0553571010"
+    },
+    {
+      "id": "tenup_59240578",
+      "tenupId": "59240578",
+      "name": "TENNIS PADEL SAINT ASTIER",
+      "address": "Rue Lagrange Chancel",
+      "city": "ST ASTIER",
+      "postalCode": "24110",
+      "country": "FR",
+      "lat": 45.14327621459961,
+      "lng": 0.5301169753074646,
+      "totalCourts": 5,
+      "indoorCourts": 5,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0631021014"
+    },
+    {
+      "id": "tenup_59240106",
+      "tenupId": "59240106",
+      "name": "TENNIS PADEL CLUB SARLADAIS",
+      "address": "Tennis Club Sarladais, Madrazès",
+      "city": "SARLAT LA CANEDA",
+      "postalCode": "24200",
+      "country": "FR",
+      "lat": 44.87599563598633,
+      "lng": 1.2286540269851685,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0553594423"
+    },
+    {
+      "id": "tenup_50150200",
+      "tenupId": "50150200",
+      "name": "JUSSAC PADEL TENNIS CLUB",
+      "address": "Promenade des Sports",
+      "city": "JUSSAC",
+      "postalCode": "15250",
+      "country": "FR",
+      "lat": 44.98960494995117,
+      "lng": 2.419796943664551,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0686797296"
+    },
+    {
+      "id": "tenup_50070245",
+      "tenupId": "50070245",
+      "name": "TENNIS CLUB ST GEORGES LES BAINS",
+      "address": "3 Impasse Henri ROULLE",
+      "city": "CHARMES/RHÔNE",
+      "postalCode": "07800",
+      "country": "FR",
+      "lat": 44.86001968383789,
+      "lng": 4.838554859161377,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0743292279"
+    },
+    {
+      "id": "tenup_50380372",
+      "tenupId": "50380372",
+      "name": "SAINT ROMANS TC",
+      "address": "118 chemin des étangs",
+      "city": "ST ROMANS",
+      "postalCode": "38160",
+      "country": "FR",
+      "lat": 45.1025390625,
+      "lng": 5.29394006729126,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0618883339"
+    },
+    {
+      "id": "tenup_50380423",
+      "tenupId": "50380423",
+      "name": "JARRIE BRIÉ TENNIS CLUB",
+      "address": "1435 Général de Gaulle",
+      "city": "Jarrie",
+      "postalCode": "38560",
+      "country": "FR",
+      "lat": 45.12009811401367,
+      "lng": 5.788496971130371,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_59240037",
+      "tenupId": "59240037",
+      "name": "CLUB ATHLETIQUE RIBERACOIS SECTION TENNIS",
+      "address": "stade municipal",
+      "city": "RIBERAC",
+      "postalCode": "24600",
+      "country": "FR",
+      "lat": 45.2503662109375,
+      "lng": 0.33792799711227417,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0767917668"
+    },
+    {
+      "id": "tenup_59L00240",
+      "tenupId": "59L00240",
+      "name": "COMITE DORDOGNE TENNIS",
+      "address": "LIEU DIT La Mothe, Le Breuilh",
+      "city": "TRELISSAC",
+      "postalCode": "24750",
+      "country": "FR",
+      "lat": 45.19710922241211,
+      "lng": 0.7765899896621704,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0630011294"
+    },
+    {
+      "id": "tenup_59240235",
+      "tenupId": "59240235",
+      "name": "TRELISSAC TC",
+      "address": "Stade Firmin Daudou",
+      "city": "TRELISSAC",
+      "postalCode": "24750",
+      "country": "FR",
+      "lat": 45.19575119018555,
+      "lng": 0.7754020094871521,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0553043687"
+    },
+    {
+      "id": "tenup_59240160",
+      "tenupId": "59240160",
+      "name": "THIVIERS TC",
+      "address": "Le parc Theulier",
+      "city": "THIVIERS",
+      "postalCode": "24800",
+      "country": "FR",
+      "lat": 45.417030334472656,
+      "lng": 0.9250199794769287,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0682658765"
+    },
+    {
+      "id": "tenup_59240058",
+      "tenupId": "59240058",
+      "name": "NONTRON GUI STC",
+      "address": "stade masvicontaux",
+      "city": "NONTRON",
+      "postalCode": "24300",
+      "country": "FR",
+      "lat": 45.52006530761719,
+      "lng": 0.6603519916534424,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0645115153"
+    },
+    {
+      "id": "tenup_59190069",
+      "tenupId": "59190069",
+      "name": "OBJATOIS TC",
+      "address": "avenue du 8 mai 1945",
+      "city": "OBJAT",
+      "postalCode": "19130",
+      "country": "FR",
+      "lat": 45.260066986083984,
+      "lng": 1.4101430177688599,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0555258893"
+    },
+    {
+      "id": "tenup_59190099",
+      "tenupId": "59190099",
+      "name": "PAYS DE POMPADOUR TC",
+      "address": "stade",
+      "city": "LUBERSAC",
+      "postalCode": "19210",
+      "country": "FR",
+      "lat": 45.44388198852539,
+      "lng": 1.408439040184021,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0681788024"
+    },
+    {
+      "id": "tenup_50430152",
+      "tenupId": "50430152",
+      "name": "FONTANNES (TENNIS CLUB)",
+      "address": "Avenue Henri Veyserre",
+      "city": "FONTANNES",
+      "postalCode": "43100",
+      "country": "FR",
+      "lat": 45.28891372680664,
+      "lng": 3.421488046646118,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50420124",
+      "tenupId": "50420124",
+      "name": "FOUILLOUSE (TENNIS CLUB LA)",
+      "address": "Rue de Saint Just",
+      "city": "LA FOUILLOUSE",
+      "postalCode": "42480",
+      "country": "FR",
+      "lat": 45.50276184082031,
+      "lng": 4.311103820800781,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0684515346"
+    },
+    {
+      "id": "tenup_50420520",
+      "tenupId": "50420520",
+      "name": "TOUR EN JAREZ (TENNIS CLUB LA)",
+      "address": "TC LA TOUR EN JAREZ, 918 route de Bayard",
+      "city": "LA TOUR EN JAREZ",
+      "postalCode": "42580",
+      "country": "FR",
+      "lat": 45.47924041748047,
+      "lng": 4.396609783172607,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0624061341"
+    },
+    {
+      "id": "tenup_50260016",
+      "tenupId": "50260016",
+      "name": "SAINT VALLIER-SARRAS T.C.",
+      "address": "5 RUE DU BELVEDERE, 5 rue du belvèdère",
+      "city": "ST VALLIER",
+      "postalCode": "26240",
+      "country": "FR",
+      "lat": 45.17829132080078,
+      "lng": 4.815205097198486,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50380329",
+      "tenupId": "50380329",
+      "name": "SAINT MAURICE L'EXIL T.C.",
+      "address": "Rue Victor Renelle",
+      "city": "ST MAURICE L EXIL",
+      "postalCode": "38550",
+      "country": "FR",
+      "lat": 45.395606994628906,
+      "lng": 4.7734808921813965,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0664014127"
+    },
+    {
+      "id": "tenup_50380258",
+      "tenupId": "50380258",
+      "name": "CLONAS SUR VAREZE TC",
+      "address": "5 route du stade",
+      "city": "CLONAS SUR VAREZE",
+      "postalCode": "38550",
+      "country": "FR",
+      "lat": 45.41420364379883,
+      "lng": 4.784368991851807,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0474849490"
+    },
+    {
+      "id": "tenup_50380165",
+      "tenupId": "50380165",
+      "name": "TENNIS CLUB MANDRINOIS",
+      "address": "collège Rose Valland",
+      "city": "ST ETIENNE DE ST GEOIRS",
+      "postalCode": "38590",
+      "country": "FR",
+      "lat": 45.34237289428711,
+      "lng": 5.342138767242432,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0476655238"
+    },
+    {
+      "id": "tenup_50380652",
+      "tenupId": "50380652",
+      "name": "PADEL TENNIS CLUB FARAMANS",
+      "address": "base de loisirs des eydoches",
+      "city": "FARAMANS",
+      "postalCode": "38260",
+      "country": "FR",
+      "lat": 45.393714904785156,
+      "lng": 5.175809860229492,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0745119796"
+    },
+    {
+      "id": "tenup_50380042",
+      "tenupId": "50380042",
+      "name": "CORENC TC",
+      "address": "Croix de Montfleury, Parc municip. sports",
+      "city": "CORENC",
+      "postalCode": "38700",
+      "country": "FR",
+      "lat": 45.21956253051758,
+      "lng": 5.762242794036865,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50380272",
+      "tenupId": "50380272",
+      "name": "MONTBONNOT TC",
+      "address": "95 rue Vaucanson",
+      "city": "MONTBONNOT ST MARTIN",
+      "postalCode": "38330",
+      "country": "FR",
+      "lat": 45.21986770629883,
+      "lng": 5.814503192901611,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0609238992"
+    },
+    {
+      "id": "tenup_50380588",
+      "tenupId": "50380588",
+      "name": "LA BUISSE TC",
+      "address": "352 Rue des Ecoles",
+      "city": "LA BUISSE",
+      "postalCode": "38500",
+      "country": "FR",
+      "lat": 45.332359313964844,
+      "lng": 5.614943981170654,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50730087",
+      "tenupId": "50730087",
+      "name": "PONTCHARRA-LA ROCHETTE TC",
+      "address": "Ile Fribaud, 191 chemin Gravières",
+      "city": "Pontcharra",
+      "postalCode": "38530",
+      "country": "FR",
+      "lat": 45.44203186035156,
+      "lng": 6.012807846069336,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0646412134"
+    },
+    {
+      "id": "tenup_59170615",
+      "tenupId": "59170615",
+      "name": "SAINT PALAISIEN TC",
+      "address": "56 bis avenue, 56 av de la Ganipote",
+      "city": "ST PALAIS SUR MER",
+      "postalCode": "17420",
+      "country": "FR",
+      "lat": 45.65045928955078,
+      "lng": -1.0879199504852295,
+      "totalCourts": 1,
+      "indoorCourts": 1,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0517251103"
+    },
+    {
+      "id": "tenup_59160003",
+      "tenupId": "59160003",
+      "name": "BARBEZIEUX TC",
+      "address": "TENNIS ALAIN GUERINEAU, 1 Al Suzanne Lenglen",
+      "city": "BARBEZIEUX ST HILAIRE",
+      "postalCode": "16300",
+      "country": "FR",
+      "lat": 45.499061584472656,
+      "lng": -0.15519599616527557,
+      "totalCourts": 4,
+      "indoorCourts": 0,
+      "outdoorCourts": 4,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0545783840"
+    },
+    {
+      "id": "tenup_59870060",
+      "tenupId": "59870060",
+      "name": "LIMOGES BAS FARGEAS TENNIS",
+      "address": "Centre Tennis Padel Pickel Bas Fargeas, 41 bis rue de Feytiat",
+      "city": "LIMOGES",
+      "postalCode": "87000",
+      "country": "FR",
+      "lat": 45.82254409790039,
+      "lng": 1.2844640016555786,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0555302923"
+    },
+    {
+      "id": "tenup_50630025",
+      "tenupId": "50630025",
+      "name": "AMBERT-LIVRADOIS TC",
+      "address": "Stade Municipal",
+      "city": "AMBERT",
+      "postalCode": "63600",
+      "country": "FR",
+      "lat": 45.53938293457031,
+      "lng": 3.748929023742676,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0765875990"
+    },
+    {
+      "id": "tenup_50420471",
+      "tenupId": "50420471",
+      "name": "CHAMBOEUF (TENNIS CLUB)",
+      "address": "Champvert",
+      "city": "Chamboeuf",
+      "postalCode": "42330",
+      "country": "FR",
+      "lat": 45.576202392578125,
+      "lng": 4.313769817352295,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50690347",
+      "tenupId": "50690347",
+      "name": "VERNAISONNAIS (TENNIS CLUB)",
+      "address": "Rue Port Puys, Complexe sportif des Lônes",
+      "city": "VERNAISON",
+      "postalCode": "69390",
+      "country": "FR",
+      "lat": 45.64684295654297,
+      "lng": 4.81273889541626,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0478464068"
+    },
+    {
+      "id": "tenup_50380344",
+      "tenupId": "50380344",
+      "name": "PONT EVEQUE TC",
+      "address": "73 rue Etienne Perrot",
+      "city": "PONT EVEQUE",
+      "postalCode": "38780",
+      "country": "FR",
+      "lat": 45.53226089477539,
+      "lng": 4.927189826965332,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0678460709"
+    },
+    {
+      "id": "tenup_50690032",
+      "tenupId": "50690032",
+      "name": "ASPTT GRAND LYON TENNIS",
+      "address": "Chemin des Bouchets",
+      "city": "SAINT-PRIEST",
+      "postalCode": "69800",
+      "country": "FR",
+      "lat": 45.723228454589844,
+      "lng": 4.936363220214844,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0478269283"
+    },
+    {
+      "id": "tenup_50690185",
+      "tenupId": "50690185",
+      "name": "ECULLY (TENNIS CLUB)",
+      "address": "2 chemin hautes bruyères",
+      "city": "ECULLY",
+      "postalCode": "69130",
+      "country": "FR",
+      "lat": 45.77547073364258,
+      "lng": 4.765868186950684,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0478333729"
+    },
+    {
+      "id": "tenup_50690089",
+      "tenupId": "50690089",
+      "name": "CALUIRE (TENNIS CLUB AS)",
+      "address": "109 Chemin de Crepieux",
+      "city": "CALUIRE ET CUIRE",
+      "postalCode": "69300",
+      "country": "FR",
+      "lat": 45.801876068115234,
+      "lng": 4.868951797485352,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0478084842"
+    },
+    {
+      "id": "tenup_50690570",
+      "tenupId": "50690570",
+      "name": "DOMMARTIN (TENNIS CLUB DE)",
+      "address": "Complexe de Maligny",
+      "city": "DOMMARTIN",
+      "postalCode": "69380",
+      "country": "FR",
+      "lat": 45.82878875732422,
+      "lng": 4.717298984527588,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0651158107"
+    },
+    {
+      "id": "tenup_50010050",
+      "tenupId": "50010050",
+      "name": "SAINT MAURICE (TENNIS)",
+      "address": "17 Ter Chemin de Thil",
+      "city": "ST MAURICE DE BEYNOST",
+      "postalCode": "01700",
+      "country": "FR",
+      "lat": 45.82614517211914,
+      "lng": 4.986533164978027,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0472258268"
+    },
+    {
+      "id": "tenup_50380021",
+      "tenupId": "50380021",
+      "name": "TENNIS PADEL BOURGOIN-JALLIEU ",
+      "address": "Place Henri Drevet",
+      "city": "BOURGOIN JALLIEU",
+      "postalCode": "38300",
+      "country": "FR",
+      "lat": 45.59710693359375,
+      "lng": 5.272119998931885,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0474931392"
+    },
+    {
+      "id": "tenup_50380596",
+      "tenupId": "50380596",
+      "name": "MAUBEC TENNIS CLUB",
+      "address": "chemin de paternos",
+      "city": "MAUBEC",
+      "postalCode": "38300",
+      "country": "FR",
+      "lat": 45.5667839050293,
+      "lng": 5.264538764953613,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0662540480"
+    },
+    {
+      "id": "tenup_50730386",
+      "tenupId": "50730386",
+      "name": "LA MOTTE SERVOLEX TC",
+      "address": "53 rue Jean Rostand, pierre de coubertin",
+      "city": "LA MOTTE SERVOLEX",
+      "postalCode": "73290",
+      "country": "FR",
+      "lat": 45.59648895263672,
+      "lng": 5.874112129211426,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0981229210"
+    },
+    {
+      "id": "tenup_50730044",
+      "tenupId": "50730044",
+      "name": "AIX LES BAINS TC",
+      "address": "84 avenue Marlioz",
+      "city": "AIX LES BAINS",
+      "postalCode": "73100",
+      "country": "FR",
+      "lat": 45.67805099487305,
+      "lng": 5.909031867980957,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0479883434"
+    },
+    {
+      "id": "tenup_50730046",
+      "tenupId": "50730046",
+      "name": "CHAMBERY TC",
+      "address": "193 allée du Colombier, Parc des loisirs de Buisson Rond",
+      "city": "CHAMBERY",
+      "postalCode": "73000",
+      "country": "FR",
+      "lat": 45.56421661376953,
+      "lng": 5.940485000610352,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0479332282"
+    },
+    {
+      "id": "tenup_50730047",
+      "tenupId": "50730047",
+      "name": "MONTMELIAN TC",
+      "address": "RD 1006",
+      "city": "MONTMELIAN",
+      "postalCode": "73800",
+      "country": "FR",
+      "lat": 45.49708557128906,
+      "lng": 6.054691791534424,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0479841506"
+    },
+    {
+      "id": "tenup_50740064",
+      "tenupId": "50740064",
+      "name": "RUMILLY TC",
+      "address": "impasse des tennis",
+      "city": "RUMILLY",
+      "postalCode": "74150",
+      "country": "FR",
+      "lat": 45.860599517822266,
+      "lng": 5.940291881561279,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0450010471"
+    },
+    {
+      "id": "tenup_59170160",
+      "tenupId": "59170160",
+      "name": "RAQUETTE CAYENNE (LA)",
+      "address": "Chemin Joë Martineau",
+      "city": "ST PIERRE D OLERON",
+      "postalCode": "17310",
+      "country": "FR",
+      "lat": 45.94974136352539,
+      "lng": -1.3101849555969238,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0695931173"
+    },
+    {
+      "id": "tenup_59170609",
+      "tenupId": "59170609",
+      "name": "LOIX TENNIS COUARDAIS",
+      "address": "Tennis Club, Avenue d'Antioche",
+      "city": "LA COUARDE SUR MER",
+      "postalCode": "17670",
+      "country": "FR",
+      "lat": 46.19213104248047,
+      "lng": -1.4314680099487305,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0546433315"
+    },
+    {
+      "id": "tenup_59170017",
+      "tenupId": "59170017",
+      "name": "ROCHEFORT SA",
+      "address": "Complexe du Polygone, avenue de Torrelavega",
+      "city": "ROCHEFORT",
+      "postalCode": "17300",
+      "country": "FR",
+      "lat": 45.92536163330078,
+      "lng": -0.9673230051994324,
+      "totalCourts": 4,
+      "indoorCourts": 4,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0546871855"
+    },
+    {
+      "id": "tenup_59870009",
+      "tenupId": "59870009",
+      "name": "SAINT JUNIEN-ORADOUR TC",
+      "address": "Rue Léo Lagrange",
+      "city": "ST JUNIEN",
+      "postalCode": "87200",
+      "country": "FR",
+      "lat": 45.88709259033203,
+      "lng": 0.9011560082435608,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0555787186"
+    },
+    {
+      "id": "tenup_50L00005",
+      "tenupId": "50L00005",
+      "name": "CENTRE DE LIGUE VICHY",
+      "address": "Centre de Ligue Vichy, 2 Avenue de la république",
+      "city": "Bellerive-sur-Allier",
+      "postalCode": "03700",
+      "country": "FR",
+      "lat": 46.11825942993164,
+      "lng": 3.4126288890838623,
+      "totalCourts": 6,
+      "indoorCourts": 6,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50030043",
+      "tenupId": "50030043",
+      "name": "CUSSET (TENNIS CLUB)",
+      "address": "Stade Jean Moulin, Rue de Banville",
+      "city": "CUSSET",
+      "postalCode": "03300",
+      "country": "FR",
+      "lat": 46.134586334228516,
+      "lng": 3.4674410820007324,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0684361965"
+    },
+    {
+      "id": "tenup_50420055",
+      "tenupId": "50420055",
+      "name": "ROANNE TENNIS CLUB",
+      "address": "103 Rue du Moulin a Vent",
+      "city": "ROANNE",
+      "postalCode": "42300",
+      "country": "FR",
+      "lat": 46.02081298828125,
+      "lng": 4.056148052215576,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0477714977"
+    },
+    {
+      "id": "tenup_50690615",
+      "tenupId": "50690615",
+      "name": "VINDRY PADEL CLUB",
+      "address": "1583 Chem. de Grange Louis",
+      "city": "ST LOUP",
+      "postalCode": "69490",
+      "country": "FR",
+      "lat": 45.88525390625,
+      "lng": 4.4904069900512695,
+      "totalCourts": 1,
+      "indoorCourts": 1,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0677053056"
+    },
+    {
+      "id": "tenup_50010218",
+      "tenupId": "50010218",
+      "name": "MONTREAL LA CLUSE (AS)",
+      "address": "7 Av Francois Prosper De Douglas",
+      "city": "MONTREAL LA CLUSE",
+      "postalCode": "01460",
+      "country": "FR",
+      "lat": 46.18533706665039,
+      "lng": 5.570781230926514,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0474761428"
+    },
+    {
+      "id": "tenup_50740624",
+      "tenupId": "50740624",
+      "name": "VALLIERES TENNIS CLUB",
+      "address": "ROUTE SUR LES MARAIS",
+      "city": "VALLIERES-SUR-FIER",
+      "postalCode": "74150",
+      "country": "FR",
+      "lat": 45.8931884765625,
+      "lng": 5.937045097351074,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0756878474"
+    },
+    {
+      "id": "tenup_50740246",
+      "tenupId": "50740246",
+      "name": "MARIGNIER TENNIS & PADEL",
+      "address": "Avenue du stade",
+      "city": "MARIGNIER",
+      "postalCode": "74970",
+      "country": "FR",
+      "lat": 46.082061767578125,
+      "lng": 6.5001678466796875,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_50740063",
+      "tenupId": "50740063",
+      "name": "MORZINE TC",
+      "address": "254 chemin du plan",
+      "city": "MORZINE",
+      "postalCode": "74110",
+      "country": "FR",
+      "lat": 46.18661117553711,
+      "lng": 6.701082229614258,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_59790067",
+      "tenupId": "59790067",
+      "name": "NIORT ECOLE DE TENNIS",
+      "address": "168 rue saint symphorien",
+      "city": "NIORT",
+      "postalCode": "79000",
+      "country": "FR",
+      "lat": 46.31188201904297,
+      "lng": -0.47177499532699585,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0549730052"
+    },
+    {
+      "id": "tenup_59790035",
+      "tenupId": "59790035",
+      "name": "MELLE TC",
+      "address": "Allée du Pinier",
+      "city": "MELLE",
+      "postalCode": "79500",
+      "country": "FR",
+      "lat": 46.23088836669922,
+      "lng": -0.13203999400138855,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0608617265"
+    },
+    {
+      "id": "tenup_59860044",
+      "tenupId": "59860044",
+      "name": "STADE POITEVIN TENNIS",
+      "address": "Halle de tennis Odile Chauvet, 2 Rue de la Deviniere",
+      "city": "POITIERS",
+      "postalCode": "86000",
+      "country": "FR",
+      "lat": 46.56867599487305,
+      "lng": 0.37696000933647156,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0549462374"
+    },
+    {
+      "id": "tenup_51710275",
+      "tenupId": "51710275",
+      "name": "PRISSE T.C.",
+      "address": "rue de la fontaine",
+      "city": "PRISSE",
+      "postalCode": "71960",
+      "country": "FR",
+      "lat": 46.32479476928711,
+      "lng": 4.7426228523254395,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0385378315"
+    },
+    {
+      "id": "tenup_51710041",
+      "tenupId": "51710041",
+      "name": "MACON T.C.",
+      "address": "202 rue Pierre de Coubertin",
+      "city": "MACON",
+      "postalCode": "71000",
+      "country": "FR",
+      "lat": 46.31864547729492,
+      "lng": 4.840314865112305,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0385383323"
+    },
+    {
+      "id": "tenup_50010044",
+      "tenupId": "50010044",
+      "name": "OYONNAX (TENNIS CLUB)",
+      "address": "146 Bis Cours de Verdun",
+      "city": "OYONNAX",
+      "postalCode": "01100",
+      "country": "FR",
+      "lat": 46.25425720214844,
+      "lng": 5.642759799957275,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0474778196"
+    },
+    {
+      "id": "tenup_50740069",
+      "tenupId": "50740069",
+      "name": "THONON LES BAINS TC",
+      "address": " , avenue de la grangette",
+      "city": "THONON LES BAINS",
+      "postalCode": "74200",
+      "country": "FR",
+      "lat": 46.36251449584961,
+      "lng": 6.466713905334473,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0450716951"
+    },
+    {
+      "id": "tenup_61850142",
+      "tenupId": "61850142",
+      "name": "GARDEN TC ST JEAN DE MONTS",
+      "address": "La Parée Jésus",
+      "city": "ST JEAN DE MONTS",
+      "postalCode": "85160",
+      "country": "FR",
+      "lat": 46.792076110839844,
+      "lng": -2.0771780014038086,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0251591830"
+    },
+    {
+      "id": "tenup_61850059",
+      "tenupId": "61850059",
+      "name": "TC CHALLANDAIS",
+      "address": "54 Rue Newton",
+      "city": "CHALLANS",
+      "postalCode": "85300",
+      "country": "FR",
+      "lat": 46.83565902709961,
+      "lng": -1.8809469938278198,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0251351580"
+    },
+    {
+      "id": "tenup_61850070",
+      "tenupId": "61850070",
+      "name": "TC ESSARTAIS",
+      "address": "Zone de Loisirs des Brosses",
+      "city": "LA MERLATIERE",
+      "postalCode": "85140",
+      "country": "FR",
+      "lat": 46.75481033325195,
+      "lng": -1.30998694896698,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_61850074",
+      "tenupId": "61850074",
+      "name": "TENNIS CLUB POUZAUGES",
+      "address": "Place de Meitingen",
+      "city": "POUZAUGES",
+      "postalCode": "85700",
+      "country": "FR",
+      "lat": 46.78373718261719,
+      "lng": -0.8320379853248596,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0963642298"
+    },
+    {
+      "id": "tenup_53360500",
+      "tenupId": "53360500",
+      "name": "UNION SPORTIVE DE SAINT MAUR TENNIS",
+      "address": "Complexe Sportif, Rue de Villers",
+      "city": "ST MAUR",
+      "postalCode": "36250",
+      "country": "FR",
+      "lat": 46.817596435546875,
+      "lng": 1.631803035736084,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0630687979"
+    },
+    {
+      "id": "tenup_51718001",
+      "tenupId": "51718001",
+      "name": "GRAND CHALON",
+      "address": "18 route de Lyon",
+      "city": "ST REMY",
+      "postalCode": "71100",
+      "country": "FR",
+      "lat": 46.77041244506836,
+      "lng": 4.843463897705078,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0385462747"
+    },
+    {
+      "id": "tenup_51710384",
+      "tenupId": "51710384",
+      "name": "CHALON T.C",
+      "address": "22 rue Pierre de Coubertin",
+      "city": "CHALON SUR SAONE",
+      "postalCode": "71100",
+      "country": "FR",
+      "lat": 46.80744171142578,
+      "lng": 4.84926700592041,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0679056526"
+    },
+    {
+      "id": "tenup_61440022",
+      "tenupId": "61440022",
+      "name": "NINON TC PORNICHET",
+      "address": "11 av de st sébastien",
+      "city": "PORNICHET",
+      "postalCode": "44380",
+      "country": "FR",
+      "lat": 47.25910568237305,
+      "lng": -2.333112955093384,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0240610622"
+    },
+    {
+      "id": "tenup_61L01000",
+      "tenupId": "61L01000",
+      "name": "LIGUE PAYS DE LA LOIRE TENNIS",
+      "address": "Route de la Ville au Blanc",
+      "city": "VERTOU",
+      "postalCode": "44120",
+      "country": "FR",
+      "lat": 47.178409576416016,
+      "lng": -1.4626929759979248,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0251375189"
+    },
+    {
+      "id": "tenup_53370047",
+      "tenupId": "53370047",
+      "name": "CHINON TENNIS CLUB",
+      "address": "Rue de la Digue Saint Jacques",
+      "city": "CHINON",
+      "postalCode": "37500",
+      "country": "FR",
+      "lat": 47.16162109375,
+      "lng": 0.2339870035648346,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0247934078"
+    },
+    {
+      "id": "tenup_51390012",
+      "tenupId": "51390012",
+      "name": "DOLE T.C.",
+      "address": "Allée des Prés Buffard",
+      "city": "DOLE",
+      "postalCode": "39100",
+      "country": "FR",
+      "lat": 47.07318115234375,
+      "lng": 5.486989974975586,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0384791689"
+    },
+    {
+      "id": "tenup_61440675",
+      "tenupId": "61440675",
+      "name": "CLUB DE TENNIS DE MESQUER",
+      "address": "Complexe Sportif de la Vigne",
+      "city": "MESQUER",
+      "postalCode": "44420",
+      "country": "FR",
+      "lat": 47.39961624145508,
+      "lng": -2.4607980251312256,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_61490079",
+      "tenupId": "61490079",
+      "name": "AS AVRILLE TENNIS",
+      "address": "Stade Delaune, Rond Point de Gaulle",
+      "city": "AVRILLE",
+      "postalCode": "49240",
+      "country": "FR",
+      "lat": 47.50050354003906,
+      "lng": -0.5905150175094604,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0965180242"
+    },
+    {
+      "id": "tenup_61720381",
+      "tenupId": "61720381",
+      "name": "TC LUDOIS",
+      "address": "Complexe Sportif, Route de Pontfour",
+      "city": "LE LUDE",
+      "postalCode": "72800",
+      "country": "FR",
+      "lat": 47.64445114135742,
+      "lng": 0.1457269936800003,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_52290040",
+      "tenupId": "52290040",
+      "name": "TENNIS PADEL CONCARNEAU",
+      "address": "(route du cabellou), 4 bis Park Balan",
+      "city": "CONCARNEAU",
+      "postalCode": "29900",
+      "country": "FR",
+      "lat": 47.857505798339844,
+      "lng": -3.894602060317993,
+      "totalCourts": 5,
+      "indoorCourts": 5,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0298604856"
+    },
+    {
+      "id": "tenup_52290026",
+      "tenupId": "52290026",
+      "name": "QUIMPER TENNIS CLUB",
+      "address": "131 boulevard de Creac'h Gwen",
+      "city": "QUIMPER",
+      "postalCode": "29000",
+      "country": "FR",
+      "lat": 47.97344970703125,
+      "lng": -4.0980000495910645,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0298904266"
+    },
+    {
+      "id": "tenup_52290373",
+      "tenupId": "52290373",
+      "name": "ERGUE GABERIC TENNIS CLUB",
+      "address": "Croas Spern",
+      "city": "ERGUE GABERIC",
+      "postalCode": "29500",
+      "country": "FR",
+      "lat": 48.00665283203125,
+      "lng": -4.0240631103515625,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0984359100"
+    },
+    {
+      "id": "tenup_52290024",
+      "tenupId": "52290024",
+      "name": "QUIMPERLE TENNIS CLUB",
+      "address": "13 rue de kerbertrand",
+      "city": "QUIMPERLE",
+      "postalCode": "29300",
+      "country": "FR",
+      "lat": 47.872432708740234,
+      "lng": -3.566401958465576,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0298391024"
+    },
+    {
+      "id": "tenup_61530101",
+      "tenupId": "61530101",
+      "name": "T.C. CHATEAU GONTIER",
+      "address": "Chemin de près l'eau",
+      "city": "CHATEAU GONTIER",
+      "postalCode": "53200",
+      "country": "FR",
+      "lat": 47.83481216430664,
+      "lng": -0.7021329998970032,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0674906603"
+    },
+    {
+      "id": "tenup_61720360",
+      "tenupId": "61720360",
+      "name": "TC SABLE SUR SARTHE",
+      "address": "11 Allée du Québec",
+      "city": "SABLE SUR SARTHE",
+      "postalCode": "72300",
+      "country": "FR",
+      "lat": 47.834800720214844,
+      "lng": -0.33596399426460266,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0614937573"
+    },
+    {
+      "id": "tenup_53410377",
+      "tenupId": "53410377",
+      "name": "AMICALE LAIQUE SAINT OUEN TENNIS",
+      "address": "rue Maryse Bastié",
+      "city": "ST OUEN",
+      "postalCode": "41100",
+      "country": "FR",
+      "lat": 47.80964660644531,
+      "lng": 1.0792820453643799,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_53450600",
+      "tenupId": "53450600",
+      "name": "TENNIS CLUB D'INGRE",
+      "address": "Mairie d'INGRE, 14 place de mairie",
+      "city": "INGRE",
+      "postalCode": "45140",
+      "country": "FR",
+      "lat": 47.91927719116211,
+      "lng": 1.839195966720581,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0238746690"
+    },
+    {
+      "id": "tenup_51890047",
+      "tenupId": "51890047",
+      "name": "MIGENNES A.S.U.C.",
+      "address": "Stade lucien masson, Rue yves du manoir",
+      "city": "MIGENNES",
+      "postalCode": "89400",
+      "country": "FR",
+      "lat": 47.956390380859375,
+      "lng": 3.510364055633545,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0386929756"
+    },
+    {
+      "id": "tenup_55680062",
+      "tenupId": "55680062",
+      "name": "AS ENTREMONT RIXHEIM",
+      "address": "2 rue A. Schweitzer",
+      "city": "RIXHEIM",
+      "postalCode": "68170",
+      "country": "FR",
+      "lat": 47.75468444824219,
+      "lng": 7.387495040893555,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0389642737"
+    },
+    {
+      "id": "tenup_55680096",
+      "tenupId": "55680096",
+      "name": "CCA ROUFFACH TENNIS - PADEL",
+      "address": "rue du stade",
+      "city": "ROUFFACH",
+      "postalCode": "68250",
+      "country": "FR",
+      "lat": 47.95393371582031,
+      "lng": 7.296327114105225,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0389785422"
+    },
+    {
+      "id": "tenup_52290139",
+      "tenupId": "52290139",
+      "name": "DOUARNENEZ TENNIS BAIE",
+      "address": "8 allée de la Sainte Croix",
+      "city": "DOUARNENEZ",
+      "postalCode": "29100",
+      "country": "FR",
+      "lat": 48.086395263671875,
+      "lng": -4.3169708251953125,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0767092464"
+    },
+    {
+      "id": "tenup_52290014",
+      "tenupId": "52290014",
+      "name": "BREST TENNIS CLUB",
+      "address": "4 rue florent schmitt",
+      "city": "BREST",
+      "postalCode": "29200",
+      "country": "FR",
+      "lat": 48.41170120239258,
+      "lng": -4.499499797821045,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0230868210"
+    },
+    {
+      "id": "tenup_52560056",
+      "tenupId": "52560056",
+      "name": "TENNIS CLUB PONDI",
+      "address": "1 Rue Stanislas Le Compagnon",
+      "city": "PONTIVY",
+      "postalCode": "56300",
+      "country": "FR",
+      "lat": 48.054786682128906,
+      "lng": -2.9713120460510254,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0297279225"
+    },
+    {
+      "id": "tenup_61530184",
+      "tenupId": "61530184",
+      "name": "L'ERNEENNE",
+      "address": "Zone de Loisirs des Bizeuls",
+      "city": "ERNEE",
+      "postalCode": "53500",
+      "country": "FR",
+      "lat": 48.30830001831055,
+      "lng": -0.9282410144805908,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0684024567"
+    },
+    {
+      "id": "tenup_61530649",
+      "tenupId": "61530649",
+      "name": "T. BOURNY LAVALLOIS",
+      "address": "28 Rue Félicité de Lamenais",
+      "city": "LAVAL",
+      "postalCode": "53000",
+      "country": "FR",
+      "lat": 48.058616638183594,
+      "lng": -0.7979450225830078,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0243682560"
+    },
+    {
+      "id": "tenup_61720678",
+      "tenupId": "61720678",
+      "name": "AS CHAPELLE ST AUBIN",
+      "address": "Rue du Coup de Pied",
+      "city": "LA CHAPELLE ST AUBIN",
+      "postalCode": "72650",
+      "country": "FR",
+      "lat": 48.033626556396484,
+      "lng": 0.16832900047302246,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_58610430",
+      "tenupId": "58610430",
+      "name": "CONDE SUR HUISNE TC",
+      "address": "3 parc des sports et loisirs",
+      "city": "CONDE SUR HUISNE",
+      "postalCode": "61110",
+      "country": "FR",
+      "lat": 48.379180908203125,
+      "lng": 0.8429409861564636,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0686126572"
+    },
+    {
+      "id": "tenup_55680035",
+      "tenupId": "55680035",
+      "name": "SR COLMAR",
+      "address": "Pôle Sportif de la Waldeslust, Ingersheimerweg",
+      "city": "COLMAR",
+      "postalCode": "68000",
+      "country": "FR",
+      "lat": 48.11103439331055,
+      "lng": 7.3340678215026855,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0389245655"
+    },
+    {
+      "id": "tenup_52220708",
+      "tenupId": "52220708",
+      "name": "PLENEUF VAL ANDRE TENNIS",
+      "address": "17 rue de la baie",
+      "city": "PLENEUF VAL ANDRE",
+      "postalCode": "22370",
+      "country": "FR",
+      "lat": 48.587310791015625,
+      "lng": -2.553420066833496,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0766869311"
+    },
+    {
+      "id": "tenup_58610077",
+      "tenupId": "58610077",
+      "name": "SEES TC",
+      "address": "5 IMPASSE DU STADE",
+      "city": "SEES",
+      "postalCode": "61500",
+      "country": "FR",
+      "lat": 48.59982681274414,
+      "lng": 0.1701129972934723,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0769503621"
+    },
+    {
+      "id": "tenup_58610151",
+      "tenupId": "58610151",
+      "name": "LE MELE SUR SARTHE AL",
+      "address": "Route de Paris, Le carré Saint Julien",
+      "city": "LE MELE SUR SARTHE",
+      "postalCode": "61170",
+      "country": "FR",
+      "lat": 48.50873565673828,
+      "lng": 0.36100101470947266,
+      "totalCourts": 4,
+      "indoorCourts": 0,
+      "outdoorCourts": 4,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0666237183"
+    },
+    {
+      "id": "tenup_58270044",
+      "tenupId": "58270044",
+      "name": "VERNEUIL SUR AVRE TC",
+      "address": "754 rue du moulin aux malades",
+      "city": "VERNEUIL SUR AVRE",
+      "postalCode": "27130",
+      "country": "FR",
+      "lat": 48.74293518066406,
+      "lng": 0.9104290008544922,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_53280017",
+      "tenupId": "53280017",
+      "name": "C'CHARTRES TENNIS",
+      "address": "Stade des Grands Prés route des",
+      "city": "CHARTRES",
+      "postalCode": "28000",
+      "country": "FR",
+      "lat": 48.460472106933594,
+      "lng": 1.4871269464492798,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0237215400"
+    },
+    {
+      "id": "tenup_57780206",
+      "tenupId": "57780206",
+      "name": "T.C. RAMBOUILLET",
+      "address": "38 rue des fontaines",
+      "city": "RAMBOUILLET",
+      "postalCode": "78120",
+      "country": "FR",
+      "lat": 48.63370132446289,
+      "lng": 1.8344889879226685,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0130418301"
+    },
+    {
+      "id": "tenup_57910038",
+      "tenupId": "57910038",
+      "name": "TENNIS CLUB BALLAINVILLIERS",
+      "address": "9 chemin de la Guy",
+      "city": "BALLAINVILLIERS",
+      "postalCode": "91160",
+      "country": "FR",
+      "lat": 48.67534637451172,
+      "lng": 2.2988109588623047,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0687200170"
+    },
+    {
+      "id": "tenup_55540526",
+      "tenupId": "55540526",
+      "name": "MEREVILLE TENNIS CYCLISME",
+      "address": "STADE",
+      "city": "MEREVILLE",
+      "postalCode": "54850",
+      "country": "FR",
+      "lat": 48.599151611328125,
+      "lng": 6.150622844696045,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0652598109"
+    },
+    {
+      "id": "tenup_58270028",
+      "tenupId": "58270028",
+      "name": "BEAUMONT LE ROGER TC",
+      "address": "route du hom (salle)",
+      "city": "BEAUMONT LE ROGER",
+      "postalCode": "27170",
+      "country": "FR",
+      "lat": 49.08141326904297,
+      "lng": 0.7754930257797241,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0232442406"
+    },
+    {
+      "id": "tenup_57780147",
+      "tenupId": "57780147",
+      "name": "A.S MANTAISE",
+      "address": "Ile aux Dames, 2 Allée des Iles Eric Tabarly",
+      "city": "MANTES LA JOLIE",
+      "postalCode": "78200",
+      "country": "FR",
+      "lat": 48.989322662353516,
+      "lng": 1.7149579524993896,
+      "totalCourts": 3,
+      "indoorCourts": 0,
+      "outdoorCourts": 3,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0677116242"
+    },
+    {
+      "id": "tenup_57780017",
+      "tenupId": "57780017",
+      "name": "T.C. DES CLAYES",
+      "address": "Rue Jacques Duclos",
+      "city": "LES CLAYES SOUS BOIS",
+      "postalCode": "78340",
+      "country": "FR",
+      "lat": 48.82509994506836,
+      "lng": 1.9754300117492676,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0765749799"
+    },
+    {
+      "id": "tenup_57780422",
+      "tenupId": "57780422",
+      "name": "T.C. BAILLY NOISY LE ROI",
+      "address": "Stade du Sibano, Avenue des Moulineaux",
+      "city": "NOISY LE ROI",
+      "postalCode": "78590",
+      "country": "FR",
+      "lat": 48.83827209472656,
+      "lng": 2.066986083984375,
+      "totalCourts": 4,
+      "indoorCourts": 4,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0134626313"
+    },
+    {
+      "id": "tenup_57780341",
+      "tenupId": "57780341",
+      "name": "T.C.M. BOIS D'ARCY",
+      "address": "Parc des sports Jean Moulin",
+      "city": "BOIS D ARCY",
+      "postalCode": "78390",
+      "country": "FR",
+      "lat": 48.804344177246094,
+      "lng": 2.0281760692596436,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0134601819"
+    },
+    {
+      "id": "tenup_57950125",
+      "tenupId": "57950125",
+      "name": "ERMONT A.C.T.",
+      "address": "Complexe Raoul Dautry, 105 rue de St Gratien",
+      "city": "ERMONT",
+      "postalCode": "95120",
+      "country": "FR",
+      "lat": 48.989070892333984,
+      "lng": 2.258450984954834,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0134152500"
+    },
+    {
+      "id": "tenup_57950197",
+      "tenupId": "57950197",
+      "name": "PONTOISE TC",
+      "address": "18 chemin de Pelouse",
+      "city": "PONTOISE",
+      "postalCode": "95300",
+      "country": "FR",
+      "lat": 49.037803649902344,
+      "lng": 2.095789909362793,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_57930010",
+      "tenupId": "57930010",
+      "name": "ASD JAD Tennis Drancéen",
+      "address": "101 rue de la station",
+      "city": "DRANCY",
+      "postalCode": "93700",
+      "country": "FR",
+      "lat": 48.91546630859375,
+      "lng": 2.429236888885498,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0148307746"
+    },
+    {
+      "id": "tenup_55570259",
+      "tenupId": "55570259",
+      "name": "FLEURY TC",
+      "address": " , rue du Limousin",
+      "city": "FLEURY",
+      "postalCode": "57420",
+      "country": "FR",
+      "lat": 49.0438232421875,
+      "lng": 6.190536022186279,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0767806969"
+    },
+    {
+      "id": "tenup_55570179",
+      "tenupId": "55570179",
+      "name": "MOULINS LES METZ TC",
+      "address": "zone de la Saussaie",
+      "city": "MOULINS LES METZ",
+      "postalCode": "57160",
+      "country": "FR",
+      "lat": 49.10650634765625,
+      "lng": 6.108703136444092,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0387805530"
+    },
+    {
+      "id": "tenup_58140016",
+      "tenupId": "58140016",
+      "name": "LISIEUX TCA",
+      "address": "7 bis rue paul cornu",
+      "city": "LISIEUX",
+      "postalCode": "14100",
+      "country": "FR",
+      "lat": 49.16365051269531,
+      "lng": 0.21981899440288544,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0671503820"
+    },
+    {
+      "id": "tenup_58760140",
+      "tenupId": "58760140",
+      "name": "MONT SAINT AIGNAN TENNIS CLUB",
+      "address": "centre sportif des coquets, 8 rue du Professeur Fleury",
+      "city": "MONT ST AIGNAN",
+      "postalCode": "76130",
+      "country": "FR",
+      "lat": 49.464717864990234,
+      "lng": 1.0756200551986694,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0235740386"
+    },
+    {
+      "id": "tenup_57950144",
+      "tenupId": "57950144",
+      "name": "MAGNY (TC)",
+      "address": "Stade municipal",
+      "city": "MAGNY EN VEXIN",
+      "postalCode": "95420",
+      "country": "FR",
+      "lat": 49.15172576904297,
+      "lng": 1.7871479988098145,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0658800628"
+    },
+    {
+      "id": "tenup_56600026",
+      "tenupId": "56600026",
+      "name": "MERU TENNIS CLUB",
+      "address": "4 rue Maurice CESAR",
+      "city": "MERU",
+      "postalCode": "60110",
+      "country": "FR",
+      "lat": 49.23260498046875,
+      "lng": 2.1399760246276855,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0344221107"
+    },
+    {
+      "id": "tenup_56600079",
+      "tenupId": "56600079",
+      "name": "COYE LA FORET T.C",
+      "address": "Stade des Bruyères",
+      "city": "COYE LA FORET",
+      "postalCode": "60580",
+      "country": "FR",
+      "lat": 49.14729690551758,
+      "lng": 2.463059902191162,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_56600126",
+      "tenupId": "56600126",
+      "name": "NOGENT SUR OISE T.M.",
+      "address": "Complexe G. Lenne, 150 avenue de l'Europe",
+      "city": "NOGENT sur OISE",
+      "postalCode": "60180",
+      "country": "FR",
+      "lat": 49.27501678466797,
+      "lng": 2.4834890365600586,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0344550894"
+    },
+    {
+      "id": "tenup_56600444",
+      "tenupId": "56600444",
+      "name": "BEAUVAIS OISE TENNIS",
+      "address": "Parc Marcel Dassault, 11 rue Antonio de Hojas",
+      "city": "BEAUVAIS",
+      "postalCode": "60000",
+      "country": "FR",
+      "lat": 49.451820373535156,
+      "lng": 2.097978115081787,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0344053788"
+    },
+    {
+      "id": "tenup_56600027",
+      "tenupId": "56600027",
+      "name": "SENLIS TENNIS CLUB",
+      "address": "Rue Yves carlier ",
+      "city": "SENLIS",
+      "postalCode": "60300",
+      "country": "FR",
+      "lat": 49.209041595458984,
+      "lng": 2.5765140056610107,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0962470227"
+    },
+    {
+      "id": "tenup_55510078",
+      "tenupId": "55510078",
+      "name": "TC GEO ANDRE",
+      "address": "Avenue Francois Mauriac",
+      "city": "REIMS",
+      "postalCode": "51100",
+      "country": "FR",
+      "lat": 49.242210388183594,
+      "lng": 3.9996418952941895,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0660457280"
+    },
+    {
+      "id": "tenup_56020189",
+      "tenupId": "56020189",
+      "name": "GUIGNICOURT UNION SPORTIVE",
+      "address": "Rue du Moulin - GUIGNICOURT",
+      "city": "VILLENEUVE SUR AISNE",
+      "postalCode": "02190",
+      "country": "FR",
+      "lat": 49.44039535522461,
+      "lng": 3.9650681018829346,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0323256570"
+    },
+    {
+      "id": "tenup_55L00006",
+      "tenupId": "55L00006",
+      "name": "Centre de Ligue \"Lorraine-Nord\" - Metz",
+      "address": "rue du Stade",
+      "city": "LONGEVILLE LES METZ",
+      "postalCode": "57050",
+      "country": "FR",
+      "lat": 49.108360290527344,
+      "lng": 6.156706809997559,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0383676010"
+    },
+    {
+      "id": "tenup_55570087",
+      "tenupId": "55570087",
+      "name": "HOMBOURG HAUT TC",
+      "address": "stade Gouvy",
+      "city": "HOMBOURG HAUT",
+      "postalCode": "57470",
+      "country": "FR",
+      "lat": 49.125213623046875,
+      "lng": 6.775557994842529,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0617120766"
+    },
+    {
+      "id": "tenup_56600073",
+      "tenupId": "56600073",
+      "name": "BRETEUIL TENNIS CLUB",
+      "address": "Rue de Paris",
+      "city": "BRETEUIL",
+      "postalCode": "60120",
+      "country": "FR",
+      "lat": 49.62759780883789,
+      "lng": 2.3012259006500244,
+      "totalCourts": 2,
+      "indoorCourts": 0,
+      "outdoorCourts": 2,
+      "source": [
+        "tenup"
+      ]
+    },
+    {
+      "id": "tenup_55080001",
+      "tenupId": "55080001",
+      "name": "TC SEDAN",
+      "address": "Rue Rogissart",
+      "city": "SEDAN",
+      "postalCode": "08200",
+      "country": "FR",
+      "lat": 49.693023681640625,
+      "lng": 4.947856903076172,
+      "totalCourts": 3,
+      "indoorCourts": 3,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0324276693"
+    },
+    {
+      "id": "tenup_56800038",
+      "tenupId": "56800038",
+      "name": "AMIENS ATHLETIC CLUB",
+      "address": "10 allée des Tennis",
+      "city": "AMIENS",
+      "postalCode": "80000",
+      "country": "FR",
+      "lat": 49.88054275512695,
+      "lng": 2.291006088256836,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0322953836"
+    },
+    {
+      "id": "tenup_56590018",
+      "tenupId": "56590018",
+      "name": "CLUB TENNIS LEO LAGRANGE FOURMIES-WIGNEHIES",
+      "address": "88 rue Léo lagrange",
+      "city": "FOURMIES",
+      "postalCode": "59610",
+      "country": "FR",
+      "lat": 50.02216339111328,
+      "lng": 4.04777193069458,
+      "totalCourts": 1,
+      "indoorCourts": 0,
+      "outdoorCourts": 1,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0327602350"
+    },
+    {
+      "id": "tenup_56800173",
+      "tenupId": "56800173",
+      "name": "RUE LE CROTOY TENNIS CLUB",
+      "address": "Rue des Roulettes",
+      "city": "LE CROTOY",
+      "postalCode": "80550",
+      "country": "FR",
+      "lat": 50.221771240234375,
+      "lng": 1.6228920221328735,
+      "totalCourts": 2,
+      "indoorCourts": 2,
+      "outdoorCourts": 0,
+      "source": [
+        "tenup"
+      ],
+      "phone": "0647857082"
+    }
+  ]
+}

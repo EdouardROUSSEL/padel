@@ -1,65 +1,117 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect, useState, useMemo } from "react";
+import dynamic from "next/dynamic";
+import { PadelCourt } from "@/types";
+
+const Map = dynamic(() => import("@/components/Map"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full flex items-center justify-center bg-zinc-50">
+      <div className="flex flex-col items-center gap-3">
+        <div className="w-8 h-8 border-2 border-zinc-200 border-t-zinc-900 rounded-full animate-spin" />
+        <span className="text-sm text-zinc-500">Chargement de la carte...</span>
+      </div>
+    </div>
+  ),
+});
+
+interface CourtsResponse {
+  courts: PadelCourt[];
+  total: number;
+  sources: Record<string, { scrapedAt: string; count: number }>;
+  message?: string;
+}
 
 export default function Home() {
+  const [courts, setCourts] = useState<PadelCourt[]>([]);
+  const [sources, setSources] = useState<CourtsResponse["sources"]>({});
+  const [loading, setLoading] = useState(true);
+  const [selectedCourt, setSelectedCourt] = useState<PadelCourt | null>(null);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        setLoading(true);
+        const res = await fetch("/api/courts");
+        const data: CourtsResponse = await res.json();
+        setCourts(data.courts || []);
+        setSources(data.sources || {});
+      } catch (err) {
+        console.error("Erreur chargement:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadData();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-zinc-50">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-10 h-10 border-2 border-zinc-200 border-t-zinc-900 rounded-full animate-spin" />
+          <p className="text-zinc-500">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="h-screen flex flex-col bg-zinc-50">
+      {/* Header */}
+      <header className="flex-shrink-0 bg-white border-b border-zinc-200/80">
+        <div className="px-5 h-14 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-zinc-900 flex items-center justify-center">
+              <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z" opacity="0.3" />
+              </svg>
+            </div>
+            <div>
+              <h1 className="text-[15px] font-semibold text-zinc-900 leading-tight">Padel Map</h1>
+              <p className="text-[11px] text-zinc-400 leading-tight">France & Belgique</p>
+            </div>
+          </div>
+
+          {/* Sources */}
+          <div className="flex items-center gap-4">
+            <SourceBadge name="osm" count={sources.osm?.count || 0} color="bg-green-500" />
+            <SourceBadge name="playtomic" count={sources.playtomic?.count || 0} color="bg-blue-500" />
+            <SourceBadge name="google" count={sources.google?.count || 0} color="bg-amber-500" />
+            <SourceBadge name="tenup" count={sources.tenup?.count || 0} color="bg-violet-500" />
+            <SourceBadge name="padelmagazine" count={sources.padelmagazine?.count || 0} color="bg-rose-500" />
+            <div className="text-right pl-4 border-l border-zinc-200">
+              <div className="text-lg font-semibold text-zinc-900 tabular-nums">
+                {courts.length.toLocaleString()}
+              </div>
+              <div className="text-[11px] text-zinc-400">total</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Map */}
+      <main className="flex-1 overflow-hidden">
+        <Map
+          courts={courts}
+          selectedCourt={selectedCourt}
+          onSelectCourt={setSelectedCourt}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
       </main>
+    </div>
+  );
+}
+
+function SourceBadge({ name, count, color }: { name: string; count: number; color: string }) {
+  return (
+    <div className="flex items-center gap-2">
+      <span className={`w-2 h-2 rounded-full ${color}`} />
+      <span className="text-xs text-zinc-600">
+        <span className="font-medium tabular-nums">{count}</span> {name}
+      </span>
     </div>
   );
 }

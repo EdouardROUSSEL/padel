@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "WebSearch",
+      "Bash(node:*)",
+      "Bash(find:*)",
+      "Bash(python3:*)",
+      "Bash(wc:*)",
+      "WebFetch(domain:www.padelmagazine.fr)",
+      "WebFetch(domain:padelmagazine.fr)"
+    ]
+  }
+}

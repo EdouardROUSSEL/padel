@@ -1,0 +1,1447 @@
+{
+  "scrapedAt": "2026-02-26T17:46:14.498Z",
+  "source": "padelmagazine",
+  "total": 180,
+  "courts": [
+    {
+      "name": "Tennis Padel Club de Saintes",
+      "lat": 45.751183,
+      "lng": -0.648911,
+      "source": "padelmagazine",
+      "sourceId": "459",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-de-saintes/"
+    },
+    {
+      "name": "TENNIS SQUASH PADEL DU MAS",
+      "lat": 42.677471,
+      "lng": 2.886396,
+      "source": "padelmagazine",
+      "sourceId": "554",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-squash-padel-du-mas/"
+    },
+    {
+      "name": "Box to Box Padel - Saint Victoret",
+      "lat": 43.413639,
+      "lng": 5.242896,
+      "source": "padelmagazine",
+      "sourceId": "1056",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/box-to-box-padel-saint-victoret/"
+    },
+    {
+      "name": "PEARL PADEL Gérardmer",
+      "lat": 48.070854,
+      "lng": 6.816223,
+      "source": "padelmagazine",
+      "sourceId": "1054",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/pearl-padel-gerardmer/"
+    },
+    {
+      "name": "Padel Dour",
+      "lat": 50.403996,
+      "lng": 3.775517,
+      "source": "padelmagazine",
+      "sourceId": "1046",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-dour/"
+    },
+    {
+      "name": "Galactic Padel",
+      "lat": 43.809692,
+      "lng": 7.315255,
+      "source": "padelmagazine",
+      "sourceId": "1044",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/galactic-padel/"
+    },
+    {
+      "name": "Let Padel Fleury-les-Aubrais",
+      "lat": 47.928684,
+      "lng": 1.897562,
+      "source": "padelmagazine",
+      "sourceId": "1038",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/let-padel-fleury-les-aubrais/"
+    },
+    {
+      "name": "Padel Brissac - Parc Sports &#038; Loisirs",
+      "lat": 43.878601,
+      "lng": 3.70182,
+      "source": "padelmagazine",
+      "sourceId": "1037",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-brissac-parc-sports-loisirs/"
+    },
+    {
+      "name": "4PADEL Épinay",
+      "lat": 48.955292,
+      "lng": 2.333319,
+      "source": "padelmagazine",
+      "sourceId": "1035",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-epinay/"
+    },
+    {
+      "name": "4PADEL CAO Saint-Denis",
+      "lat": 48.924809,
+      "lng": 2.356437,
+      "source": "padelmagazine",
+      "sourceId": "1034",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-cao-saint-denis/"
+    },
+    {
+      "name": "4PADEL Vaires-Torcy",
+      "lat": 48.863747,
+      "lng": 2.64342,
+      "source": "padelmagazine",
+      "sourceId": "1033",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-vaires-torcy/"
+    },
+    {
+      "name": "4PADEL Argenteuil",
+      "lat": 48.949646,
+      "lng": 2.209442,
+      "source": "padelmagazine",
+      "sourceId": "1032",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-argenteuil/"
+    },
+    {
+      "name": "Gimont Padel",
+      "lat": 43.623383,
+      "lng": 0.914908,
+      "source": "padelmagazine",
+      "sourceId": "1029",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/gimont-padel/"
+    },
+    {
+      "name": "Le Lob Padel",
+      "lat": 47.732456,
+      "lng": -3.458438,
+      "source": "padelmagazine",
+      "sourceId": "1027",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-lob-padel/"
+    },
+    {
+      "name": "MORET PADEL - City Padel",
+      "lat": 48.350014,
+      "lng": 2.848948,
+      "source": "padelmagazine",
+      "sourceId": "1021",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/moret-padel-city-padel/"
+    },
+    {
+      "name": "Le MurMur",
+      "lat": 45.198017,
+      "lng": 0.665318,
+      "source": "padelmagazine",
+      "sourceId": "1016",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-murmur/"
+    },
+    {
+      "name": "Buenavista Padel Club",
+      "lat": 44.76939,
+      "lng": -0.467273,
+      "source": "padelmagazine",
+      "sourceId": "1015",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/buenavista-padel-club/"
+    },
+    {
+      "name": "Padel Football Club",
+      "lat": 50.283684,
+      "lng": 3.389229,
+      "source": "padelmagazine",
+      "sourceId": "1011",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-football-club/"
+    },
+    {
+      "name": "Tennis \\/ Padel Country Club Barrière La Baule",
+      "lat": 47.281834,
+      "lng": -2.413424,
+      "source": "padelmagazine",
+      "sourceId": "1006",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-country-club-barriere-la-baule/"
+    },
+    {
+      "name": "My Sport Center",
+      "lat": 48.942055,
+      "lng": 1.435356,
+      "source": "padelmagazine",
+      "sourceId": "1003",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/my-sport-center/"
+    },
+    {
+      "name": "Padelistes Quimper",
+      "lat": 47.961956,
+      "lng": -4.083209,
+      "source": "padelmagazine",
+      "sourceId": "1002",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padelistes-quimper/"
+    },
+    {
+      "name": "Lyon V&#038;V Padel - City Padel",
+      "lat": 45.7747,
+      "lng": 4.910019,
+      "source": "padelmagazine",
+      "sourceId": "998",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/lyon-vv-padel-city-padel/"
+    },
+    {
+      "name": "La Pista Padel Club",
+      "lat": 43.447426,
+      "lng": 5.349252,
+      "source": "padelmagazine",
+      "sourceId": "991",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/la-pista-padel-club/"
+    },
+    {
+      "name": "Sportfield Paris 16",
+      "lat": 48.851219,
+      "lng": 2.278951,
+      "source": "padelmagazine",
+      "sourceId": "982",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/sportfield-paris-16/"
+    },
+    {
+      "name": "VidaPadel Nancy",
+      "lat": 48.709003,
+      "lng": 6.168649,
+      "source": "padelmagazine",
+      "sourceId": "980",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/vidapadel-nancy/"
+    },
+    {
+      "name": "Ace Padel",
+      "lat": 48.627464,
+      "lng": 2.406096,
+      "source": "padelmagazine",
+      "sourceId": "978",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ace-padel/"
+    },
+    {
+      "name": "Arsenal Padel Tarbes",
+      "lat": 43.239704,
+      "lng": 0.083684,
+      "source": "padelmagazine",
+      "sourceId": "973",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/arsenal-padel-tarbes/"
+    },
+    {
+      "name": "WinWin Padel Manosque",
+      "lat": 43.801624,
+      "lng": 5.810161,
+      "source": "padelmagazine",
+      "sourceId": "1018",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/winwin-padel-manosque/"
+    },
+    {
+      "name": "4 PADEL Lille Seclin",
+      "lat": 50.546066,
+      "lng": 3.046713,
+      "source": "padelmagazine",
+      "sourceId": "970",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4-padel-lille-seclin/"
+    },
+    {
+      "name": "Le Cercle du Padel",
+      "lat": 43.429489,
+      "lng": 5.419127,
+      "source": "padelmagazine",
+      "sourceId": "969",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-cercle-du-padel/"
+    },
+    {
+      "name": "La Bandeja",
+      "lat": 45.145374,
+      "lng": 0.692923,
+      "source": "padelmagazine",
+      "sourceId": "968",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/la-bandeja/"
+    },
+    {
+      "name": "Tennis Padel Saint Astier",
+      "lat": 45.143471,
+      "lng": 0.530074,
+      "source": "padelmagazine",
+      "sourceId": "967",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-saint-astier/"
+    },
+    {
+      "name": "Padel AC – Roissy",
+      "lat": 48.979038,
+      "lng": 2.501706,
+      "source": "padelmagazine",
+      "sourceId": "966",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-ac-roissy/"
+    },
+    {
+      "name": "Casa Padel DOS - Asnières-sur-Seine",
+      "lat": 48.914871,
+      "lng": 2.305736,
+      "source": "padelmagazine",
+      "sourceId": "962",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/casa-padel-dos-asnieres-sur-seine/"
+    },
+    {
+      "name": "G PADEL",
+      "lat": 48.635471,
+      "lng": 7.724287,
+      "source": "padelmagazine",
+      "sourceId": "960",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/g-padel/"
+    },
+    {
+      "name": "MS Padel Vannes",
+      "lat": 47.699928,
+      "lng": -2.768034,
+      "source": "padelmagazine",
+      "sourceId": "959",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ms-padel-vannes/"
+    },
+    {
+      "name": "Ginga Stadium",
+      "lat": 44.818043,
+      "lng": -0.678113,
+      "source": "padelmagazine",
+      "sourceId": "958",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ginga-stadium/"
+    },
+    {
+      "name": "Racing Club de France – La Boulie (Versailles)",
+      "lat": 48.806599,
+      "lng": 2.132033,
+      "source": "padelmagazine",
+      "sourceId": "944",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/racing-club-de-france-la-boulie-versailles/"
+    },
+    {
+      "name": "Forever Padel",
+      "lat": 44.773891,
+      "lng": -0.650356,
+      "source": "padelmagazine",
+      "sourceId": "938",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/forever-padel/"
+    },
+    {
+      "name": "CAP 7 PADEL Marseille",
+      "lat": 43.27581,
+      "lng": 5.407055,
+      "source": "padelmagazine",
+      "sourceId": "956",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/cap-7-padel-marseille/"
+    },
+    {
+      "name": "4PADEL Reims",
+      "lat": 49.268536,
+      "lng": 4.039198,
+      "source": "padelmagazine",
+      "sourceId": "929",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-reims/"
+    },
+    {
+      "name": "My Center Cogolin",
+      "lat": 43.243488,
+      "lng": 6.550163,
+      "source": "padelmagazine",
+      "sourceId": "928",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/my-center-cogolin/"
+    },
+    {
+      "name": "UrbanPadel Lille Bondues",
+      "lat": 50.690647,
+      "lng": 3.086372,
+      "source": "padelmagazine",
+      "sourceId": "922",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urbanpadel-lille-bondues/"
+    },
+    {
+      "name": "Padel World Maurepas",
+      "lat": 48.761375,
+      "lng": 1.913224,
+      "source": "padelmagazine",
+      "sourceId": "920",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-world-maurepas/"
+    },
+    {
+      "name": "New Padel Club",
+      "lat": 49.159447,
+      "lng": 2.249464,
+      "source": "padelmagazine",
+      "sourceId": "918",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/new-padel-club/"
+    },
+    {
+      "name": "Padel 15",
+      "lat": 48.829872,
+      "lng": 2.305042,
+      "source": "padelmagazine",
+      "sourceId": "906",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-15/"
+    },
+    {
+      "name": "Amiens Padel",
+      "lat": 49.85582,
+      "lng": 2.351249,
+      "source": "padelmagazine",
+      "sourceId": "903",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/amiens-padel/"
+    },
+    {
+      "name": "Padel33 Bruges",
+      "lat": 44.897522,
+      "lng": -0.606846,
+      "source": "padelmagazine",
+      "sourceId": "902",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel33-bruges/"
+    },
+    {
+      "name": "Area Padel Caen Verson",
+      "lat": 49.157864,
+      "lng": -0.460506,
+      "source": "padelmagazine",
+      "sourceId": "901",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/area-padel-caen-verson/"
+    },
+    {
+      "name": "PADEL SAUVIAN SUD MÉDITERRANÉE",
+      "lat": 43.288525,
+      "lng": 3.247307,
+      "source": "padelmagazine",
+      "sourceId": "898",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-sauvian-sud-mediterranee/"
+    },
+    {
+      "name": "Galaxy Padel",
+      "lat": 46.57082,
+      "lng": 0.408081,
+      "source": "padelmagazine",
+      "sourceId": "893",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/galaxy-padel/"
+    },
+    {
+      "name": "Lattes Padel Club",
+      "lat": 43.587273,
+      "lng": 3.916036,
+      "source": "padelmagazine",
+      "sourceId": "1048",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/lattes-padel-club/"
+    },
+    {
+      "name": "Padel 91 Sainte-Geneviève-des-Bois",
+      "lat": 48.637573,
+      "lng": 2.332869,
+      "source": "padelmagazine",
+      "sourceId": "887",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-91-sainte-genevieve-des-bois/"
+    },
+    {
+      "name": "No Ad Padel Club",
+      "lat": 49.240952,
+      "lng": 4.092251,
+      "source": "padelmagazine",
+      "sourceId": "886",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/no-ad-padel-club/"
+    },
+    {
+      "name": "PadelShot Reims",
+      "lat": 49.269947,
+      "lng": 4.00542,
+      "source": "padelmagazine",
+      "sourceId": "885",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padelshot-reims/"
+    },
+    {
+      "name": "Stadium Caen",
+      "lat": 49.222645,
+      "lng": -0.370928,
+      "source": "padelmagazine",
+      "sourceId": "883",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/stadium-caen/"
+    },
+    {
+      "name": "4PADEL Paris 20",
+      "lat": 48.853271,
+      "lng": 2.415486,
+      "source": "padelmagazine",
+      "sourceId": "869",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-paris-20/"
+    },
+    {
+      "name": "Red Star Padel Tennis Club",
+      "lat": 45.841965,
+      "lng": 1.249153,
+      "source": "padelmagazine",
+      "sourceId": "868",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/red-star-padel-tennis-club/"
+    },
+    {
+      "name": "UrbanPadel Lyon - Dardilly",
+      "lat": 45.792427,
+      "lng": 4.738842,
+      "source": "padelmagazine",
+      "sourceId": "853",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urbanpadel-lyon-dardilly/"
+    },
+    {
+      "name": "Area Padel Deauville",
+      "lat": 49.359695,
+      "lng": 0.077121,
+      "source": "padelmagazine",
+      "sourceId": "850",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/area-padel-deauville/"
+    },
+    {
+      "name": "UrbanPadel Cap-Malo",
+      "lat": 48.200886,
+      "lng": -1.722837,
+      "source": "padelmagazine",
+      "sourceId": "828",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urbanpadel-cap-malo/"
+    },
+    {
+      "name": "La Pala Angers",
+      "lat": 47.434471,
+      "lng": -0.499021,
+      "source": "padelmagazine",
+      "sourceId": "824",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/la-pala-angers/"
+    },
+    {
+      "name": "SKINUP ACADEMY",
+      "lat": 47.271744,
+      "lng": 0.475099,
+      "source": "padelmagazine",
+      "sourceId": "917",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/skinup-academy/"
+    },
+    {
+      "name": "PadelShot Metz",
+      "lat": 49.143124,
+      "lng": 6.161844,
+      "source": "padelmagazine",
+      "sourceId": "797",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padelshot-metz/"
+    },
+    {
+      "name": "Padelistes Bercy",
+      "lat": 48.827328,
+      "lng": 2.393806,
+      "source": "padelmagazine",
+      "sourceId": "795",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padelistes-bercy/"
+    },
+    {
+      "name": "On padel Toulouse",
+      "lat": 43.518856,
+      "lng": 1.533828,
+      "source": "padelmagazine",
+      "sourceId": "793",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/on-padel-toulouse/"
+    },
+    {
+      "name": "TOP PADEL Toulouse",
+      "lat": 43.597126,
+      "lng": 1.289481,
+      "source": "padelmagazine",
+      "sourceId": "852",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/top-padel-toulouse/"
+    },
+    {
+      "name": "My Center La Grande Motte",
+      "lat": 43.557789,
+      "lng": 4.086475,
+      "source": "padelmagazine",
+      "sourceId": "822",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/my-center-la-grande-motte/"
+    },
+    {
+      "name": "Padel House Cenon",
+      "lat": 44.854534,
+      "lng": -0.521433,
+      "source": "padelmagazine",
+      "sourceId": "783",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-house-cenon/"
+    },
+    {
+      "name": "Padel Occitanie",
+      "lat": 44.033791,
+      "lng": 1.373876,
+      "source": "padelmagazine",
+      "sourceId": "779",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-occitanie/"
+    },
+    {
+      "name": "Blue Padel",
+      "lat": 43.701679,
+      "lng": -1.031387,
+      "source": "padelmagazine",
+      "sourceId": "965",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/blue-padel/"
+    },
+    {
+      "name": "Mam&#8217; Soccer 5 Padel",
+      "lat": 44.049442,
+      "lng": 4.021179,
+      "source": "padelmagazine",
+      "sourceId": "776",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/mam-soccer-5-padel/"
+    },
+    {
+      "name": "Tennis club de Baillargues",
+      "lat": 43.667557,
+      "lng": 4.018333,
+      "source": "padelmagazine",
+      "sourceId": "773",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-club-de-baillargues/"
+    },
+    {
+      "name": "TerraPadel Andrézieux",
+      "lat": 45.531204,
+      "lng": 4.290451,
+      "source": "padelmagazine",
+      "sourceId": "768",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/terrapadel-andrezieux/"
+    },
+    {
+      "name": "Cèdres Côté Club - Castres",
+      "lat": 43.590923,
+      "lng": 2.224805,
+      "source": "padelmagazine",
+      "sourceId": "763",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/cedres-cote-club-castres/"
+    },
+    {
+      "name": "Padel 3 Troyes",
+      "lat": 48.324154,
+      "lng": 4.034946,
+      "source": "padelmagazine",
+      "sourceId": "892",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-3-troye/"
+    },
+    {
+      "name": "UrbanPadel Dijon",
+      "lat": 47.340286,
+      "lng": 5.072775,
+      "source": "padelmagazine",
+      "sourceId": "811",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urbanpadel-dijon/"
+    },
+    {
+      "name": "Padel 3",
+      "lat": 48.324154,
+      "lng": 4.034946,
+      "source": "padelmagazine",
+      "sourceId": "758",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-3/"
+    },
+    {
+      "name": "Forest Hill AQUABOULEVARD ",
+      "lat": 48.832813,
+      "lng": 2.277017,
+      "source": "padelmagazine",
+      "sourceId": "754",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/forest-hill-aquaboulevard/"
+    },
+    {
+      "name": "Urban Padel Clermont",
+      "lat": 45.760742,
+      "lng": 3.141766,
+      "source": "padelmagazine",
+      "sourceId": "812",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urban-padel-clermont/"
+    },
+    {
+      "name": "Stadium Antibes",
+      "lat": 43.611855,
+      "lng": 7.122261,
+      "source": "padelmagazine",
+      "sourceId": "748",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/stadium-antibes/"
+    },
+    {
+      "name": "Clermont Padel Club",
+      "lat": 43.60709,
+      "lng": 3.470872,
+      "source": "padelmagazine",
+      "sourceId": "746",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/clermont-padel-club/"
+    },
+    {
+      "name": "Ciotat Tennis Club",
+      "lat": 43.195995,
+      "lng": 5.631238,
+      "source": "padelmagazine",
+      "sourceId": "745",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ciotat-tennis-club/"
+    },
+    {
+      "name": "Grenoble Tennis Padel",
+      "lat": 45.172791,
+      "lng": 5.725566,
+      "source": "padelmagazine",
+      "sourceId": "734",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/grenoble-tennis-padel/"
+    },
+    {
+      "name": "Padel Shot Lyon",
+      "lat": 45.747822,
+      "lng": 4.748924,
+      "source": "padelmagazine",
+      "sourceId": "725",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-shot-lyon/"
+    },
+    {
+      "name": "UrbanPadel Nantes-Carquefou",
+      "lat": 47.281776,
+      "lng": -1.473931,
+      "source": "padelmagazine",
+      "sourceId": "816",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urbanpadel-nantes-carquefou/"
+    },
+    {
+      "name": "UrbanPadel Évry",
+      "lat": 48.628559,
+      "lng": 2.406874,
+      "source": "padelmagazine",
+      "sourceId": "817",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urbanpadel-evry/"
+    },
+    {
+      "name": "AccessPadel Malauzat",
+      "lat": 45.848766,
+      "lng": 3.072734,
+      "source": "padelmagazine",
+      "sourceId": "714",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/accesspadel-malauzat/"
+    },
+    {
+      "name": "AccessPadel Lempdes",
+      "lat": 45.782242,
+      "lng": 3.196181,
+      "source": "padelmagazine",
+      "sourceId": "727",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/accesspadel-lempdes/"
+    },
+    {
+      "name": "UrbanPadel Rennes-Vern",
+      "lat": 48.045071,
+      "lng": -1.603364,
+      "source": "padelmagazine",
+      "sourceId": "818",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/urbanpadel-rennes-vern/"
+    },
+    {
+      "name": "Tennis Padel club de Montaleigne AGASC",
+      "lat": 43.689629,
+      "lng": 7.170483,
+      "source": "padelmagazine",
+      "sourceId": "710",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-de-montaleigne-agasc/"
+    },
+    {
+      "name": "Padel City",
+      "lat": 47.694515,
+      "lng": -2.000596,
+      "source": "padelmagazine",
+      "sourceId": "702",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-city/"
+    },
+    {
+      "name": "Provence Padel",
+      "lat": 43.939182,
+      "lng": 4.94937,
+      "source": "padelmagazine",
+      "sourceId": "701",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/provence-padel/"
+    },
+    {
+      "name": "Asav Tennis Padel - VAUZELLES",
+      "lat": 47.004959,
+      "lng": 3.144166,
+      "source": "padelmagazine",
+      "sourceId": "964",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/asav-tennis-padel-vauzelles/"
+    },
+    {
+      "name": "Central Sport Club",
+      "lat": 43.367661,
+      "lng": -1.584593,
+      "source": "padelmagazine",
+      "sourceId": "698",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/central-sport-club/"
+    },
+    {
+      "name": "Can Padel",
+      "lat": 42.659908,
+      "lng": 2.928115,
+      "source": "padelmagazine",
+      "sourceId": "696",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/can-padel/"
+    },
+    {
+      "name": "PADEL CAMPUS ARENA",
+      "lat": 50.51609,
+      "lng": 2.851012,
+      "source": "padelmagazine",
+      "sourceId": "692",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-campus-arena/"
+    },
+    {
+      "name": "TSB Valenciennes",
+      "lat": 50.357933,
+      "lng": 3.530351,
+      "source": "padelmagazine",
+      "sourceId": "874",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tsb-valenciennes/"
+    },
+    {
+      "name": "Ever Go St Martin Boulogne",
+      "lat": 50.728973,
+      "lng": 1.665958,
+      "source": "padelmagazine",
+      "sourceId": "680",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ever-go-st-martin-boulogne/"
+    },
+    {
+      "name": "Padel Spot",
+      "lat": 45.667725,
+      "lng": 0.167113,
+      "source": "padelmagazine",
+      "sourceId": "673",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-spot/"
+    },
+    {
+      "name": "4PADEL SAINT LOUIS BÂLE",
+      "lat": 47.602211,
+      "lng": 7.544167,
+      "source": "padelmagazine",
+      "sourceId": "848",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-saint-louis-bale/"
+    },
+    {
+      "name": "4PADEL Lens-Liévin",
+      "lat": 50.42944,
+      "lng": 2.743555,
+      "source": "padelmagazine",
+      "sourceId": "663",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-lens-lievin/"
+    },
+    {
+      "name": "Inside Sport",
+      "lat": 49.230141,
+      "lng": 4.07963,
+      "source": "padelmagazine",
+      "sourceId": "658",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/inside-sport/"
+    },
+    {
+      "name": "TSB Jarville",
+      "lat": 48.659309,
+      "lng": 6.210842,
+      "source": "padelmagazine",
+      "sourceId": "649",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tsb-jarville/"
+    },
+    {
+      "name": "Breizh Padel",
+      "lat": 48.058666,
+      "lng": -1.73786,
+      "source": "padelmagazine",
+      "sourceId": "641",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/breizh-padel/"
+    },
+    {
+      "name": "Sportin67",
+      "lat": 48.828331,
+      "lng": 7.751262,
+      "source": "padelmagazine",
+      "sourceId": "838",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/sportin67/"
+    },
+    {
+      "name": "BALL IN D&#8217;OR Dreux",
+      "lat": 48.74828,
+      "lng": 1.359482,
+      "source": "padelmagazine",
+      "sourceId": "637",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ball-in-dor-dreux/"
+    },
+    {
+      "name": "Tennis &#038; Padel Bourg-Lès-Valence",
+      "lat": 44.950718,
+      "lng": 4.906208,
+      "source": "padelmagazine",
+      "sourceId": "630",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-bourg-les-valence/"
+    },
+    {
+      "name": "Tennis Club de Marignier",
+      "lat": 46.082687,
+      "lng": 6.500179,
+      "source": "padelmagazine",
+      "sourceId": "628",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-club-de-marignier/"
+    },
+    {
+      "name": "Tennis Club Arcachon",
+      "lat": 44.652107,
+      "lng": -1.19055,
+      "source": "padelmagazine",
+      "sourceId": "616",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-club-arcachon/"
+    },
+    {
+      "name": "Aramis Padel Mons",
+      "lat": 50.474598,
+      "lng": 3.954986,
+      "source": "padelmagazine",
+      "sourceId": "615",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/aramis-padel-mons/"
+    },
+    {
+      "name": "Padel Rennais",
+      "lat": 48.101017,
+      "lng": -1.732212,
+      "source": "padelmagazine",
+      "sourceId": "607",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-rennais/"
+    },
+    {
+      "name": "Tennis Padel Club Soufflenheim",
+      "lat": 48.833382,
+      "lng": 7.964196,
+      "source": "padelmagazine",
+      "sourceId": "839",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-soufflenheim/"
+    },
+    {
+      "name": "Country Club de Barbossi",
+      "lat": 43.524975,
+      "lng": 6.915419,
+      "source": "padelmagazine",
+      "sourceId": "596",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/country-club-de-barbossi/"
+    },
+    {
+      "name": "Let Padel",
+      "lat": 47.886791,
+      "lng": 1.874647,
+      "source": "padelmagazine",
+      "sourceId": "594",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/let-padel/"
+    },
+    {
+      "name": "Complexe sportif sur Soyons",
+      "lat": 44.897388,
+      "lng": 4.851766,
+      "source": "padelmagazine",
+      "sourceId": "592",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/complexe-sportif-sur-soyons/"
+    },
+    {
+      "name": "Padel Factory",
+      "lat": 43.325195,
+      "lng": -0.436668,
+      "source": "padelmagazine",
+      "sourceId": "583",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-factory/"
+    },
+    {
+      "name": "Padel Shot Saint-Etienne",
+      "lat": 45.460575,
+      "lng": 4.391464,
+      "source": "padelmagazine",
+      "sourceId": "581",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-shot-saint-etienne/"
+    },
+    {
+      "name": "Padel Shot Caen",
+      "lat": 49.156868,
+      "lng": -0.309392,
+      "source": "padelmagazine",
+      "sourceId": "832",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-shot-caen/"
+    },
+    {
+      "name": "Padel Club Solesmes",
+      "lat": 50.182201,
+      "lng": 3.501528,
+      "source": "padelmagazine",
+      "sourceId": "578",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-club-solesmes/"
+    },
+    {
+      "name": "ASPTT GRAND LYON TENNIS PADEL",
+      "lat": 45.718349,
+      "lng": 4.938818,
+      "source": "padelmagazine",
+      "sourceId": "573",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/asptt-grand-lyon-tennis-padel/"
+    },
+    {
+      "name": "Area Padel Club Narbonne",
+      "lat": 43.211529,
+      "lng": 3.029788,
+      "source": "padelmagazine",
+      "sourceId": "569",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/area-padel-club-narbonne/"
+    },
+    {
+      "name": "Lagord Tennis Padel Squash",
+      "lat": 46.193188,
+      "lng": -1.156221,
+      "source": "padelmagazine",
+      "sourceId": "561",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/lagord-tennis-padel-squash/"
+    },
+    {
+      "name": "Tennis Padel Barcarès",
+      "lat": 42.806499,
+      "lng": 3.03018,
+      "source": "padelmagazine",
+      "sourceId": "560",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-barcares/"
+    },
+    {
+      "name": "OGS TENNIS Grand Synthe",
+      "lat": 51.010551,
+      "lng": 2.289364,
+      "source": "padelmagazine",
+      "sourceId": "558",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ogs-tennis-grand-synthe/"
+    },
+    {
+      "name": "Padel Club Rugby Park 64",
+      "lat": 43.299229,
+      "lng": -0.300592,
+      "source": "padelmagazine",
+      "sourceId": "519",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-club-rugby-park-64/"
+    },
+    {
+      "name": "ULTRA FABRON",
+      "lat": 43.689983,
+      "lng": 7.224218,
+      "source": "padelmagazine",
+      "sourceId": "473",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/ultra-fabron/"
+    },
+    {
+      "name": "A.S. d’Électricité de Strasbourg – Tennis &amp; Padel",
+      "lat": 48.570824,
+      "lng": 7.706594,
+      "source": "padelmagazine",
+      "sourceId": "841",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/a-s-delectricite-de-strasbourg-tennis-padel/"
+    },
+    {
+      "name": "L’Île de Loisirs de Cergy-Pontoise - Padel",
+      "lat": 49.023457,
+      "lng": 2.056209,
+      "source": "padelmagazine",
+      "sourceId": "470",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/lile-de-loisirs-de-cergy-pontoise-padel/"
+    },
+    {
+      "name": "Padel Annecy Les Marquisats",
+      "lat": 45.892563,
+      "lng": 6.137114,
+      "source": "padelmagazine",
+      "sourceId": "468",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-annecy-les-marquisats/"
+    },
+    {
+      "name": "Tennis Padel Club Monplaisir",
+      "lat": 43.423241,
+      "lng": 3.163165,
+      "source": "padelmagazine",
+      "sourceId": "609",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-monplaisir/"
+    },
+    {
+      "name": "Tennis Club des Loges – Saint Germain en Laye",
+      "lat": 48.914047,
+      "lng": 2.08233,
+      "source": "padelmagazine",
+      "sourceId": "460",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-club-des-loges-saint-germain-en-laye/"
+    },
+    {
+      "name": "Elan Sport",
+      "lat": 45.479698,
+      "lng": 4.382078,
+      "source": "padelmagazine",
+      "sourceId": "456",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/elan-sport/"
+    },
+    {
+      "name": "Racket Park Amboise",
+      "lat": 47.439999,
+      "lng": 1,
+      "source": "padelmagazine",
+      "sourceId": "629",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/racket-park-amboise/"
+    },
+    {
+      "name": "PLANETE RAQUETTES",
+      "lat": 48.426567,
+      "lng": 2.768783,
+      "source": "padelmagazine",
+      "sourceId": "453",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/planete-raquettes/"
+    },
+    {
+      "name": "Tennis Padel Club Vernon",
+      "lat": 49.096172,
+      "lng": 1.492544,
+      "source": "padelmagazine",
+      "sourceId": "452",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-vernon/"
+    },
+    {
+      "name": "Sète Padel Club",
+      "lat": 43.42075,
+      "lng": 3.707284,
+      "source": "padelmagazine",
+      "sourceId": "449",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/sete-padel-club/"
+    },
+    {
+      "name": "Tennis Padel Club de Peynier",
+      "lat": 43.446693,
+      "lng": 5.633217,
+      "source": "padelmagazine",
+      "sourceId": "447",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-de-peynier/"
+    },
+    {
+      "name": "Tennis Club de Bandol",
+      "lat": 43.136314,
+      "lng": 5.754475,
+      "source": "padelmagazine",
+      "sourceId": "926",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-club-de-bandol/"
+    },
+    {
+      "name": "Camping Club l&#8217;Air Marin",
+      "lat": 43.302177,
+      "lng": 3.422602,
+      "source": "padelmagazine",
+      "sourceId": "445",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/camping-club-lair-marin/"
+    },
+    {
+      "name": "Carnac Tennis Club de Beaumer",
+      "lat": 47.573963,
+      "lng": -3.056472,
+      "source": "padelmagazine",
+      "sourceId": "444",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/carnac-tennis-club-de-beaumer/"
+    },
+    {
+      "name": "Camping Sunêlia Mas Des Lavandes",
+      "lat": 43.257587,
+      "lng": 3.282793,
+      "source": "padelmagazine",
+      "sourceId": "443",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/camping-sunelia-mas-des-lavandes/"
+    },
+    {
+      "name": "PADEL Des Ancises Vichy",
+      "lat": 46.181774,
+      "lng": 3.455794,
+      "source": "padelmagazine",
+      "sourceId": "442",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-des-ancises-vichy/"
+    },
+    {
+      "name": "Tennis \\/ Padel Club de Saint Priest",
+      "lat": 45.694534,
+      "lng": 4.957204,
+      "source": "padelmagazine",
+      "sourceId": "437",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-de-saint-priest/"
+    },
+    {
+      "name": "Azur Calcetto",
+      "lat": 43.794964,
+      "lng": 7.475761,
+      "source": "padelmagazine",
+      "sourceId": "429",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/azur-calcetto/"
+    },
+    {
+      "name": "Padel Touch",
+      "lat": 44.607605,
+      "lng": -1.121624,
+      "source": "padelmagazine",
+      "sourceId": "427",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-touch/"
+    },
+    {
+      "name": "Tennis \\/ Padel Club de Gémenos",
+      "lat": 43.284309,
+      "lng": 5.620245,
+      "source": "padelmagazine",
+      "sourceId": "1023",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-club-de-gemenos/"
+    },
+    {
+      "name": "ACT Ermont",
+      "lat": 48.978931,
+      "lng": 2.262419,
+      "source": "padelmagazine",
+      "sourceId": "422",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/act-ermont/"
+    },
+    {
+      "name": "INDOOR Center",
+      "lat": 43.157322,
+      "lng": 2.967669,
+      "source": "padelmagazine",
+      "sourceId": "699",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/indoor-center/"
+    },
+    {
+      "name": "Padel Bocage",
+      "lat": 43.346004,
+      "lng": 5.461805,
+      "source": "padelmagazine",
+      "sourceId": "730",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-bocage/"
+    },
+    {
+      "name": "Hub Padel",
+      "lat": 43.63203,
+      "lng": 6.952736,
+      "source": "padelmagazine",
+      "sourceId": "479",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/hub-padel/"
+    },
+    {
+      "name": "AUC TENNIS PADEL",
+      "lat": 43.508617,
+      "lng": 5.466702,
+      "source": "padelmagazine",
+      "sourceId": "405",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/auc-tennis-padel/"
+    },
+    {
+      "name": "Centre Sportif  - Padel Les Bruyères",
+      "lat": 43.31493,
+      "lng": -0.336431,
+      "source": "padelmagazine",
+      "sourceId": "400",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/centre-sportif-padel-les-bruyeres/"
+    },
+    {
+      "name": "Forest Hill La Marche-Marnes la Coquette",
+      "lat": 48.837631,
+      "lng": 2.156408,
+      "source": "padelmagazine",
+      "sourceId": "912",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/forest-hill-la-marche-marnes-la-coquette/"
+    },
+    {
+      "name": "Padel \\/ Tennis club Dardilly",
+      "lat": 45.801277,
+      "lng": 4.771038,
+      "source": "padelmagazine",
+      "sourceId": "434",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-tennis-club-dardilly/"
+    },
+    {
+      "name": "Central Padel",
+      "lat": 42.687683,
+      "lng": 2.874636,
+      "source": "padelmagazine",
+      "sourceId": "382",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/central-padel/"
+    },
+    {
+      "name": "TSB Dunkerque Malo",
+      "lat": 51.051807,
+      "lng": 2.415974,
+      "source": "padelmagazine",
+      "sourceId": "377",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tsb-dunkerque-malo/"
+    },
+    {
+      "name": "Le Five Marville",
+      "lat": 48.93644,
+      "lng": 2.385927,
+      "source": "padelmagazine",
+      "sourceId": "374",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-five-marville/"
+    },
+    {
+      "name": "4PADEL METZ",
+      "lat": 49.086807,
+      "lng": 6.117677,
+      "source": "padelmagazine",
+      "sourceId": "369",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-metz/"
+    },
+    {
+      "name": "Parc du Tremblay",
+      "lat": 48.828228,
+      "lng": 2.481559,
+      "source": "padelmagazine",
+      "sourceId": "648",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/parc-du-tremblay/"
+    },
+    {
+      "name": "PADDLE PLUS",
+      "lat": 43.653103,
+      "lng": 1.389003,
+      "source": "padelmagazine",
+      "sourceId": "281",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/paddle-plus/"
+    },
+    {
+      "name": "PADEL CLUB DE FIGEAC",
+      "lat": 44.610023,
+      "lng": 2.049293,
+      "source": "padelmagazine",
+      "sourceId": "273",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-club-de-figeac/"
+    },
+    {
+      "name": "LE COMPLEXE MANOSQUE",
+      "lat": 43.801342,
+      "lng": 5.810641,
+      "source": "padelmagazine",
+      "sourceId": "486",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-complexe-manosque/"
+    },
+    {
+      "name": "LES PYRAMIDES",
+      "lat": 48.886967,
+      "lng": 2.102482,
+      "source": "padelmagazine",
+      "sourceId": "765",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/les-pyramides/"
+    },
+    {
+      "name": "PARIS COUNTRY CLUB",
+      "lat": 48.860535,
+      "lng": 2.197822,
+      "source": "padelmagazine",
+      "sourceId": "248",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/paris-country-club/"
+    },
+    {
+      "name": "4PADEL BORDEAUX",
+      "lat": 44.880074,
+      "lng": -0.559766,
+      "source": "padelmagazine",
+      "sourceId": "1004",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/4padel-bordeaux/"
+    },
+    {
+      "name": "4PADEL STRASBOURG",
+      "lat": 48.589809,
+      "lng": 7.679382,
+      "source": "padelmagazine",
+      "sourceId": "845",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/soccer-park-strasbourg/"
+    },
+    {
+      "name": "FAC Frontignan",
+      "lat": 43.449425,
+      "lng": 3.7546,
+      "source": "padelmagazine",
+      "sourceId": "323",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/fac-frontignan/"
+    },
+    {
+      "name": "WINWIN PADEL Cabriès",
+      "lat": 43.419708,
+      "lng": 5.366885,
+      "source": "padelmagazine",
+      "sourceId": "530",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/winwin-padel-cabries/"
+    },
+    {
+      "name": "ASSOCIATION TENNISTIQUE PERIGNANAISE - Padel",
+      "lat": 43.228062,
+      "lng": 3.137545,
+      "source": "padelmagazine",
+      "sourceId": "308",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/association-tennistique-perignanaise-padel/"
+    },
+    {
+      "name": "5R – 5 Raquettes",
+      "lat": 43.653088,
+      "lng": 3.95354,
+      "source": "padelmagazine",
+      "sourceId": "562",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/5r-5-raquettes/"
+    },
+    {
+      "name": "Tennis Padel Soleil",
+      "lat": 43.745235,
+      "lng": 7.420098,
+      "source": "padelmagazine",
+      "sourceId": "1028",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/tennis-padel-soleil/"
+    },
+    {
+      "name": "Temple du sport Lunel",
+      "lat": 43.689102,
+      "lng": 4.158224,
+      "source": "padelmagazine",
+      "sourceId": "566",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/temple-du-sport/"
+    },
+    {
+      "name": "4PADEL CHAMPIGNY",
+      "lat": 48.818962,
+      "lng": 2.525427,
+      "source": "padelmagazine",
+      "sourceId": "537",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/soccer-park-champigny/"
+    },
+    {
+      "name": "PADEL HORIZON",
+      "lat": 48.773777,
+      "lng": 2.505445,
+      "source": "padelmagazine",
+      "sourceId": "556",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-horizon/"
+    },
+    {
+      "name": "Padel Club de l&#8217;Adour",
+      "lat": 43.552158,
+      "lng": -1.469247,
+      "source": "padelmagazine",
+      "sourceId": "655",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/padel-club-de-ladour/"
+    },
+    {
+      "name": "4PADEL Dunkerque",
+      "lat": 51.015385,
+      "lng": 2.349677,
+      "source": "padelmagazine",
+      "sourceId": "538",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-five-dunkerque/"
+    },
+    {
+      "name": "Le S&#8217;match",
+      "lat": 50.49651,
+      "lng": 2.586103,
+      "source": "padelmagazine",
+      "sourceId": "497",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-smatch/"
+    },
+    {
+      "name": "4PADEL – Perpignan",
+      "lat": 42.685265,
+      "lng": 2.854038,
+      "source": "padelmagazine",
+      "sourceId": "542",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-five-perpignan/"
+    },
+    {
+      "name": "4PADEL Créteil",
+      "lat": 48.764847,
+      "lng": 2.470963,
+      "source": "padelmagazine",
+      "sourceId": "642",
+      "url": "https://padelmagazine.fr/annuaire-des-clubs/le-five-creteil/"
+    }
+  ]
+}
