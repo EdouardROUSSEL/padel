@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { PadelCourt } from "@/types";
@@ -128,8 +128,8 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
   const markersRef = useRef<L.CircleMarker[]>([]);
   const polygonsRef = useRef<L.Polygon[]>([]);
   const gridCirclesRef = useRef<L.Circle[]>([]);
-  const [showPolygons, setShowPolygons] = useState(true);
-  const [showGrid, setShowGrid] = useState(false);
+  const showPolygons = false; // Zone cachée par défaut
+  const showGrid = false; // Grille cachée par défaut
 
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
@@ -283,10 +283,10 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
     <div className="relative w-full h-full">
       <div ref={mapContainerRef} className="w-full h-full" />
 
-      {/* Legend */}
-      <div className="absolute bottom-5 left-5 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-zinc-100 z-[1000]">
-        <div className="text-[10px] font-medium text-zinc-400 uppercase tracking-wider mb-3">Sources</div>
-        <div className="space-y-2">
+      {/* Legend - hidden on mobile, visible on tablet+ */}
+      <div className="hidden sm:block absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-zinc-100 z-[1000]">
+        <div className="text-[10px] font-medium text-zinc-400 uppercase tracking-wider mb-2">Légende</div>
+        <div className="space-y-1.5">
           <LegendItem color={sourceColors.playtomic} label="Playtomic" />
           <LegendItem color={sourceColors.osm} label="OpenStreetMap" />
           <LegendItem color={sourceColors.google} label="Google" />
@@ -296,35 +296,6 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
         </div>
       </div>
 
-      {/* Court count */}
-      <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-md border border-zinc-100 z-[1000]">
-        <span className="text-lg font-semibold text-zinc-900 tabular-nums">{courts.length.toLocaleString()}</span>
-        <span className="text-sm text-zinc-500 ml-1.5">clubs visibles</span>
-      </div>
-
-      {/* Toggle buttons */}
-      <div className="absolute top-5 right-20 flex gap-2 z-[1000]">
-        <button
-          onClick={() => setShowPolygons(!showPolygons)}
-          className={`px-3 py-2 text-sm font-medium rounded-lg shadow-md border border-zinc-100 transition-colors ${
-            showPolygons
-              ? "bg-blue-500 text-white"
-              : "bg-white/95 text-zinc-600 hover:bg-zinc-100"
-          }`}
-        >
-          {showPolygons ? "Masquer zones" : "Zones"}
-        </button>
-        <button
-          onClick={() => setShowGrid(!showGrid)}
-          className={`px-3 py-2 text-sm font-medium rounded-lg shadow-md border border-zinc-100 transition-colors ${
-            showGrid
-              ? "bg-emerald-500 text-white"
-              : "bg-white/95 text-zinc-600 hover:bg-zinc-100"
-          }`}
-        >
-          {showGrid ? `Masquer grille (${GRID_POINTS.length})` : `Grille (${GRID_POINTS.length})`}
-        </button>
-      </div>
     </div>
   );
 }

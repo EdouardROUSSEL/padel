@@ -12,11 +12,12 @@ export interface PadelCourt {
   totalCourts: number;
   indoorCourts: number;
   outdoorCourts: number;
-  source: ("playtomic" | "osm" | "google" | "tenup")[];
+  source: ("playtomic" | "osm" | "google" | "tenup" | "padelmagazine")[];
   googlePlaceId?: string;
   playtomicId?: string;
   osmId?: string;
   tenupId?: string;
+  padelmagazineId?: string;
   phone?: string;
   website?: string;
   imageUrl?: string;
@@ -88,4 +89,19 @@ export interface ScrapingProgress {
   completed: number;
   found: number;
   errors: string[];
+}
+
+export interface RawCourt {
+  name: string;
+  lat: number;
+  lng: number;
+  source: string;
+  sourceId: string;
+  url?: string;
+  address?: string;
+  city?: string;
+  postalCode?: string;
+  totalCourts?: number;
+  indoorCourts?: number;
+  outdoorCourts?: number;
 }

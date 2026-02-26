@@ -24,7 +24,7 @@ function parseMarkersFromHtml(html: string): PadelMagClub[] {
   const clubs: PadelMagClub[] = [];
 
   // Find the eval array content
-  const evalMatch = html.match(/eval\(\[\[(.*?)\]\]\)/s);
+  const evalMatch = html.match(/eval\(\[\[([\s\S]*?)\]\]\)/);
   if (!evalMatch) {
     // Alternative: match individual club arrays
     const clubArrayRegex = /\["(\d+)","([\d.-]+)","([\d.-]+)",false,false,"8","([^"]+)","[^"]*","(https?:[^"]+)"/g;
