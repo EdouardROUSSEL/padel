@@ -8,19 +8,20 @@ import { getCountryFromCoords, isInSearchZone, FRANCE_BELGIUM_BOUNDS } from "@/l
  */
 
 const STEP_KM = 40; // 40km spacing with 30km radius = 20km overlap = no gaps
+const DENSE_STEP_KM = 25; // 25km spacing for denser coverage (35km overlap with 30km radius)
 
 /**
- * Generate grid points that fall within France or Belgium
+ * Generate grid points with configurable step
  */
-function generateFranceBelgiumGrid(): GridPoint[] {
+function generateGrid(stepKm: number): GridPoint[] {
   const points: GridPoint[] = [];
-  const latStep = STEP_KM / 111; // ~0.36 degrees
+  const latStep = stepKm / 111;
 
   const { minLat, maxLat, minLng, maxLng } = FRANCE_BELGIUM_BOUNDS;
 
   for (let lat = minLat; lat <= maxLat; lat += latStep) {
     // Adjust longitude step for latitude (Earth curvature)
-    const lngStep = STEP_KM / (111 * Math.cos((lat * Math.PI) / 180));
+    const lngStep = stepKm / (111 * Math.cos((lat * Math.PI) / 180));
 
     for (let lng = minLng; lng <= maxLng; lng += lngStep) {
       const roundedLat = Math.round(lat * 10000) / 10000;
@@ -42,6 +43,20 @@ function generateFranceBelgiumGrid(): GridPoint[] {
 }
 
 /**
+ * Generate grid points that fall within France or Belgium (standard 40km step)
+ */
+function generateFranceBelgiumGrid(): GridPoint[] {
+  return generateGrid(STEP_KM);
+}
+
+/**
+ * Generate dense grid (25km step) for better coverage with 30km radius APIs
+ */
+function generateDenseGrid(): GridPoint[] {
+  return generateGrid(DENSE_STEP_KM);
+}
+
+/**
  * Generate France-only grid (for TenUp/FFT)
  */
 function generateFranceOnlyGrid(): GridPoint[] {
@@ -55,10 +70,15 @@ function generateBelgiumOnlyGrid(): GridPoint[] {
   return generateFranceBelgiumGrid().filter(p => p.name.startsWith("BE_"));
 }
 
-// Main grids
+// Main grids (40km step)
 export const FRANCE_BELGIUM_GRID = generateFranceBelgiumGrid();
 export const FRANCE_GRID = generateFranceOnlyGrid();
 export const BELGIUM_GRID = generateBelgiumOnlyGrid();
+
+// Dense grids (25km step) - for APIs with 30km max radius like Ten'Up
+export const DENSE_GRID = generateDenseGrid();
+export const DENSE_FRANCE_GRID = DENSE_GRID.filter(p => p.name.startsWith("FR_"));
+export const DENSE_BELGIUM_GRID = DENSE_GRID.filter(p => p.name.startsWith("BE_"));
 
 // Alias for backwards compatibility
 export const FULL_GRID = FRANCE_BELGIUM_GRID;
@@ -91,8 +111,13 @@ export const GRID_STATS = {
   france: FRANCE_GRID.length,
   belgium: BELGIUM_GRID.length,
   stepKm: STEP_KM,
+  denseTotal: DENSE_GRID.length,
+  denseFrance: DENSE_FRANCE_GRID.length,
+  denseBelgium: DENSE_BELGIUM_GRID.length,
+  denseStepKm: DENSE_STEP_KM,
   coverage: "France + Belgique + Luxembourg (polygone précis)",
 };
 
 // Log stats on module load (for debugging)
 console.log(`Grid stats: ${GRID_STATS.total} points (FR: ${GRID_STATS.france}, BE: ${GRID_STATS.belgium})`);
+console.log(`Dense grid: ${GRID_STATS.denseTotal} points (FR: ${GRID_STATS.denseFrance}, BE: ${GRID_STATS.denseBelgium})`);

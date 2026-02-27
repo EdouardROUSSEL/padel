@@ -23,7 +23,7 @@ interface CourtsResponse {
   message?: string;
 }
 
-const ALL_SOURCES = ["osm", "playtomic", "google", "tenup", "padelmagazine"] as const;
+const ALL_SOURCES = ["osm", "playtomic", "google", "tenup", "padelmagazine", "anybuddy"] as const;
 type SourceType = typeof ALL_SOURCES[number];
 
 export default function Home() {
@@ -153,6 +153,13 @@ export default function Home() {
                 active={activeSources.has("padelmagazine")}
                 onClick={() => toggleSource("padelmagazine")}
               />
+              <SourceToggle
+                name="anybuddy"
+                count={sources.anybuddy?.count || 0}
+                color="bg-pink-500"
+                active={activeSources.has("anybuddy")}
+                onClick={() => toggleSource("anybuddy")}
+              />
             </div>
             <div className="text-right pl-2 sm:pl-4 border-l border-zinc-200">
               <div className="text-base sm:text-lg font-semibold text-zinc-900 tabular-nums">
@@ -206,6 +213,14 @@ export default function Home() {
               color="bg-rose-500"
               active={activeSources.has("padelmagazine")}
               onClick={() => toggleSource("padelmagazine")}
+              showLabel
+            />
+            <SourceToggle
+              name="Anybuddy"
+              count={sources.anybuddy?.count || 0}
+              color="bg-pink-500"
+              active={activeSources.has("anybuddy")}
+              onClick={() => toggleSource("anybuddy")}
               showLabel
             />
           </div>

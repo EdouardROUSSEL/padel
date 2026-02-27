@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { PadelCourt } from "@/types";
+import { FRENCH_CITIES } from "@/lib/scrapers/french-cities";
 
 // Corsica rectangle
 const CORSICA_BOUNDS = {
@@ -42,6 +43,7 @@ const sourceColors = {
   google: "#F59E0B",
   tenup: "#8B5CF6",
   padelmagazine: "#F43F5E",
+  anybuddy: "#EC4899",
   multiple: "#18181B",
 };
 
@@ -52,6 +54,7 @@ const getMarkerColor = (court: PadelCourt): string => {
   if (court.source.includes("google")) return sourceColors.google;
   if (court.source.includes("tenup")) return sourceColors.tenup;
   if (court.source.includes("padelmagazine")) return sourceColors.padelmagazine;
+  if (court.source.includes("anybuddy")) return sourceColors.anybuddy;
   return "#71717A";
 };
 
@@ -66,61 +69,8 @@ const getMarkerSize = (court: PadelCourt): number => {
 const MAP_TILE_URL = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 const MAP_ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>';
 
-// Generate grid points for visualization (same logic as grid.ts)
-const STEP_KM = 40; // 40km spacing with 30km radius = 20km overlap = no gaps
 const SEARCH_RADIUS_KM = 30;
-
-// Ray-casting algorithm for point-in-polygon
-function isPointInPolygon(lat: number, lng: number, polygon: [number, number][]): boolean {
-  let inside = false;
-  for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
-    const yi = polygon[i][0], xi = polygon[i][1];
-    const yj = polygon[j][0], xj = polygon[j][1];
-    if (((yi > lat) !== (yj > lat)) && (lng < (xj - xi) * (lat - yi) / (yj - yi) + xi)) {
-      inside = !inside;
-    }
-  }
-  return inside;
-}
-
-function isInZone(lat: number, lng: number): boolean {
-  // Check main France+Belgium polygon
-  if (isPointInPolygon(lat, lng, FRANCE_BELGIUM_POLYGON)) return true;
-  // Check Corsica rectangle
-  if (lat >= CORSICA_BOUNDS.minLat && lat <= CORSICA_BOUNDS.maxLat &&
-      lng >= CORSICA_BOUNDS.minLng && lng <= CORSICA_BOUNDS.maxLng) return true;
-  return false;
-}
-
-function generateGridPoints(): { lat: number; lng: number }[] {
-  const points: { lat: number; lng: number }[] = [];
-  const latStep = STEP_KM / 111;
-
-  // Combined bounds (covers all zones)
-  const bounds = {
-    minLat: 41.3,
-    maxLat: 51.5,
-    minLng: -5.0,
-    maxLng: 9.6,
-  };
-
-  for (let lat = bounds.minLat; lat <= bounds.maxLat; lat += latStep) {
-    const lngStep = STEP_KM / (111 * Math.cos((lat * Math.PI) / 180));
-
-    for (let lng = bounds.minLng; lng <= bounds.maxLng; lng += lngStep) {
-      const roundedLat = Math.round(lat * 10000) / 10000;
-      const roundedLng = Math.round(lng * 10000) / 10000;
-
-      if (isInZone(roundedLat, roundedLng)) {
-        points.push({ lat: roundedLat, lng: roundedLng });
-      }
-    }
-  }
-
-  return points;
-}
-
-const GRID_POINTS = generateGridPoints();
+const GRID_POINTS = FRENCH_CITIES;
 
 export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) {
   const mapRef = useRef<L.Map | null>(null);
@@ -129,7 +79,7 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
   const polygonsRef = useRef<L.Polygon[]>([]);
   const gridCirclesRef = useRef<L.Circle[]>([]);
   const showPolygons = false; // Zone cachée par défaut
-  const showGrid = false; // Grille cachée par défaut
+  const showGrid = false; // Grille cachée
 
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
@@ -227,6 +177,8 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
             osm: "background:#16A34A",
             google: "background:#F59E0B",
             tenup: "background:#8B5CF6",
+            padelmagazine: "background:#F43F5E",
+            anybuddy: "background:#EC4899",
           };
           return `<span style="display:inline-block;width:6px;height:6px;border-radius:50%;${colors[s] || "background:#71717A"};margin-right:4px"></span>${s}`;
         })
@@ -292,6 +244,7 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
           <LegendItem color={sourceColors.google} label="Google" />
           <LegendItem color={sourceColors.tenup} label="Ten'Up (FFT)" />
           <LegendItem color={sourceColors.padelmagazine} label="PadelMagazine" />
+          <LegendItem color={sourceColors.anybuddy} label="Anybuddy" />
           <LegendItem color={sourceColors.multiple} label="Multi-sources" />
         </div>
       </div>

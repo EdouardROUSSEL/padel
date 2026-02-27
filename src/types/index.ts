@@ -12,15 +12,19 @@ export interface PadelCourt {
   totalCourts: number;
   indoorCourts: number;
   outdoorCourts: number;
-  source: ("playtomic" | "osm" | "google" | "tenup" | "padelmagazine")[];
+  source: ("playtomic" | "osm" | "google" | "tenup" | "padelmagazine" | "anybuddy")[];
   googlePlaceId?: string;
   playtomicId?: string;
   osmId?: string;
   tenupId?: string;
   padelmagazineId?: string;
+  anybuddyId?: string;
   phone?: string;
   website?: string;
+  url?: string;
   imageUrl?: string;
+  priceMin?: string;
+  priceMax?: string;
   // Données enrichies
   department?: string; // FR: 75, 33, etc. / BE: province
   region?: string;
