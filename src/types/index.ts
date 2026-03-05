@@ -12,7 +12,8 @@ export interface PadelCourt {
   totalCourts: number;
   indoorCourts: number;
   outdoorCourts: number;
-  source: ("playtomic" | "osm" | "google" | "tenup" | "padelmagazine" | "anybuddy")[];
+  type?: "padel" | "tennis";
+  source: ("playtomic" | "osm" | "google" | "tenup" | "padelmagazine" | "anybuddy" | "fft-padel" | "fft-tennis")[];
   googlePlaceId?: string;
   playtomicId?: string;
   osmId?: string;

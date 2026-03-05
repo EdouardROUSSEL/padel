@@ -37,13 +37,15 @@ interface MapProps {
 }
 
 // Source colors matching the design system
-const sourceColors = {
+const sourceColors: Record<string, string> = {
   playtomic: "#0066FF",
   osm: "#16A34A",
   google: "#F59E0B",
   tenup: "#8B5CF6",
   padelmagazine: "#F43F5E",
   anybuddy: "#EC4899",
+  "fft-padel": "#14B8A6",
+  "fft-tennis": "#F97316",
   multiple: "#18181B",
 };
 
@@ -55,6 +57,8 @@ const getMarkerColor = (court: PadelCourt): string => {
   if (court.source.includes("tenup")) return sourceColors.tenup;
   if (court.source.includes("padelmagazine")) return sourceColors.padelmagazine;
   if (court.source.includes("anybuddy")) return sourceColors.anybuddy;
+  if (court.source.includes("fft-padel")) return sourceColors["fft-padel"];
+  if (court.source.includes("fft-tennis")) return sourceColors["fft-tennis"];
   return "#71717A";
 };
 
@@ -179,6 +183,8 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
             tenup: "background:#8B5CF6",
             padelmagazine: "background:#F43F5E",
             anybuddy: "background:#EC4899",
+            "fft-padel": "background:#14B8A6",
+            "fft-tennis": "background:#F97316",
           };
           return `<span style="display:inline-block;width:6px;height:6px;border-radius:50%;${colors[s] || "background:#71717A"};margin-right:4px"></span>${s}`;
         })
@@ -245,6 +251,8 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
           <LegendItem color={sourceColors.tenup} label="Ten'Up (FFT)" />
           <LegendItem color={sourceColors.padelmagazine} label="PadelMagazine" />
           <LegendItem color={sourceColors.anybuddy} label="Anybuddy" />
+          <LegendItem color={sourceColors["fft-padel"]} label="FFT Padel" />
+          <LegendItem color={sourceColors["fft-tennis"]} label="FFT Tennis" />
           <LegendItem color={sourceColors.multiple} label="Multi-sources" />
         </div>
       </div>

@@ -34,14 +34,15 @@ interface MergedData {
 
 const DATA_DIR = join(process.cwd(), 'data');
 
-// Sources to merge: all raw files
+// Sources to merge: raw files + cleaned google + FFT padel enriched
 const SOURCES = [
   { path: 'raw/anybuddy.json', name: 'anybuddy' },
   { path: 'raw/osm.json', name: 'osm' },
   { path: 'raw/padelmagazine.json', name: 'padelmagazine' },
   { path: 'raw/playtomic.json', name: 'playtomic' },
   { path: 'raw/tenup.json', name: 'tenup' },
-  { path: 'raw/google.json', name: 'google' },
+  { path: 'raw/fft-padel-enriched.json', name: 'fft-padel' },
+  { path: 'google_padel.json', name: 'google' },
 ];
 
 function loadDataFile(relativePath: string): DataFile | null {
