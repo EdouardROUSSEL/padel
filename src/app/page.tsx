@@ -71,7 +71,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [selectedCourt, setSelectedCourt] = useState<PadelCourt | null>(null);
   const [activeSources, setActiveSources] = useState<Set<SourceType>>(new Set(ALL_SOURCES));
-  const [activeTypes, setActiveTypes] = useState<Set<CourtType>>(new Set(["padel", "tennis"]));
+  const [activeTypes, setActiveTypes] = useState<Set<CourtType>>(new Set(["padel"]));
   const [showStatsPanel, setShowStatsPanel] = useState(false);
 
   // Layer toggles

@@ -36,51 +36,75 @@ export interface SidebarProps {
   isDefaultParams: boolean;
 }
 
-// --- Layer toggle item ---
-interface LayerItemProps {
-  icon: React.ReactNode;
+// --- Simple toggle switch ---
+function Toggle({ active, onClick }: { active: boolean; onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`relative w-8 h-[18px] rounded-full transition-colors flex-shrink-0 ${
+        active ? "bg-zinc-900" : "bg-zinc-200"
+      }`}
+    >
+      <span
+        className={`absolute top-[2px] w-[14px] h-[14px] rounded-full bg-white shadow-sm transition-transform ${
+          active ? "left-[16px]" : "left-[2px]"
+        }`}
+      />
+    </button>
+  );
+}
+
+// --- Layer row with toggle ---
+interface LayerRowProps {
   label: string;
+  description?: string;
   count?: number;
   active: boolean;
-  onClick: () => void;
-  color: string;
+  onToggle: () => void;
+  expanded?: boolean;
+  onExpand?: () => void;
   children?: React.ReactNode;
 }
 
-function LayerItem({ icon, label, count, active, onClick, color, children }: LayerItemProps) {
+function LayerRow({ label, description, count, active, onToggle, expanded, onExpand, children }: LayerRowProps) {
+  const hasSettings = !!children;
   return (
     <div>
-      <button
-        onClick={onClick}
-        className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left transition-all group ${
-          active
-            ? "bg-zinc-900 text-white shadow-sm"
-            : "hover:bg-zinc-50 text-zinc-600"
-        }`}
-      >
-        <div
-          className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${
-            active ? "bg-white/15" : "bg-zinc-100"
-          }`}
-          style={!active ? { backgroundColor: `${color}10` } : undefined}
+      <div className="flex items-center gap-2.5 py-2.5 px-1">
+        <Toggle active={active} onClick={onToggle} />
+        <button
+          onClick={hasSettings && active ? onExpand : onToggle}
+          className="flex-1 flex items-center justify-between min-w-0"
         >
-          <div className={active ? "text-white" : ""} style={!active ? { color } : undefined}>
-            {icon}
+          <div className="min-w-0">
+            <span className={`text-[13px] font-medium ${active ? "text-zinc-900" : "text-zinc-400"}`}>
+              {label}
+            </span>
+            {description && (
+              <p className={`text-[10px] leading-tight mt-0.5 ${active ? "text-zinc-400" : "text-zinc-300"}`}>
+                {description}
+              </p>
+            )}
           </div>
-        </div>
-        <div className="flex-1 min-w-0">
-          <div className={`text-[13px] font-medium leading-tight ${active ? "text-white" : "text-zinc-800"}`}>
-            {label}
+          <div className="flex items-center gap-1.5 flex-shrink-0 ml-2">
+            {count != null && (
+              <span className={`text-[11px] tabular-nums ${active ? "text-zinc-400" : "text-zinc-300"}`}>
+                {count.toLocaleString()}
+              </span>
+            )}
+            {hasSettings && active && (
+              <svg
+                className={`w-3 h-3 text-zinc-300 transition-transform ${expanded ? "rotate-180" : ""}`}
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            )}
           </div>
-        </div>
-        {count != null && (
-          <span className={`text-xs tabular-nums font-medium ${active ? "text-white/60" : "text-zinc-400"}`}>
-            {count.toLocaleString()}
-          </span>
-        )}
-      </button>
-      {active && children && (
-        <div className="mt-1.5 animate-fade-in">{children}</div>
+        </button>
+      </div>
+      {active && expanded && children && (
+        <div className="pb-1 animate-fade-in">{children}</div>
       )}
     </div>
   );
@@ -88,88 +112,79 @@ function LayerItem({ icon, label, count, active, onClick, color, children }: Lay
 
 // --- Layers section ---
 function LayersSection(props: SidebarProps) {
+  const [expandedLayer, setExpandedLayer] = useState<string | null>(null);
+
+  const toggle = (key: string) => {
+    setExpandedLayer((prev) => (prev === key ? null : key));
+  };
+
   return (
-    <div className="space-y-1">
-      <LayerItem
-        icon={
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-        }
+    <div className="divide-y divide-zinc-100">
+      <LayerRow
         label="Clubs"
+        description="Clubs de padel recenses depuis toutes les sources"
         count={props.totalCount}
         active={props.showCourts}
-        onClick={props.onToggleCourts}
-        color="#18181B"
+        onToggle={props.onToggleCourts}
       />
 
-      <LayerItem
-        icon={
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-            <circle cx="12" cy="12" r="10" strokeDasharray="4 2" />
-            <path strokeLinecap="round" d="M12 8v4l2 2" />
-          </svg>
-        }
+      <LayerRow
         label="Zones blanches"
+        description="Villes sans club de padel a proximite, opportunites d'implantation"
         count={props.whiteCitiesCount}
         active={props.showWhiteCities}
-        onClick={props.onToggleWhiteCities}
-        color="#EF4444"
+        onToggle={props.onToggleWhiteCities}
+        expanded={expandedLayer === "white"}
+        onExpand={() => toggle("white")}
       >
         <WhiteCityControls
           params={props.analysisParams}
           onChange={props.onChangeParams}
           count={props.whiteCitiesCount}
         />
-      </LayerItem>
+      </LayerRow>
 
-      <LayerItem
-        icon={
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-          </svg>
-        }
+      <LayerRow
         label="Friches"
+        description="Terrains industriels ou commerciaux disponibles, potentiels sites de construction"
         count={props.frichesCount}
         active={props.showFriches}
-        onClick={props.onToggleFriches}
-        color="#F59E0B"
+        onToggle={props.onToggleFriches}
+        expanded={expandedLayer === "friches"}
+        onExpand={() => toggle("friches")}
       >
         <FricheControls
           params={props.analysisParams}
           onChange={props.onChangeParams}
           count={props.frichesCount}
         />
-      </LayerItem>
+      </LayerRow>
 
-      <LayerItem
-        icon={
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-          </svg>
-        }
-        label="Heatmap"
+      <LayerRow
+        label="Heatmap demande"
+        description="Zones sous-equipees en padel par rapport a la population locale"
         count={props.heatmapPointCount}
         active={props.showHeatmap}
-        onClick={props.onToggleHeatmap}
-        color="#EF4444"
+        onToggle={props.onToggleHeatmap}
+        expanded={expandedLayer === "heatmap"}
+        onExpand={() => toggle("heatmap")}
       >
         <HeatmapControls
           params={props.analysisParams}
           onChange={props.onChangeParams}
           pointCount={props.heatmapPointCount}
         />
-      </LayerItem>
+      </LayerRow>
 
       {!props.isDefaultParams && (
-        <button
-          onClick={props.onResetParams}
-          className="w-full mt-1 px-3 py-2 rounded-lg text-[11px] font-medium text-zinc-400 hover:text-zinc-600 hover:bg-zinc-50 transition-colors text-center"
-        >
-          Reinitialiser les parametres
-        </button>
+        <div className="pt-2">
+          <button
+            onClick={props.onResetParams}
+            className="w-full py-1.5 text-[11px] font-medium text-zinc-400 hover:text-zinc-600 transition-colors text-center"
+          >
+            Reinitialiser les parametres
+          </button>
+        </div>
       )}
     </div>
   );
@@ -182,7 +197,7 @@ function DesktopSidebar(props: SidebarProps) {
   return (
     <div
       className={`hidden md:flex flex-col absolute top-0 left-0 z-[1000] transition-all duration-300 ${
-        collapsed ? "w-0" : "w-[320px]"
+        collapsed ? "w-0" : "w-[280px]"
       }`}
     >
       {/* Collapse toggle */}
@@ -199,8 +214,8 @@ function DesktopSidebar(props: SidebarProps) {
       </button>
 
       {!collapsed && (
-        <div className="w-[320px] h-full bg-white border-r border-zinc-200/80 shadow-lg overflow-hidden flex flex-col">
-          {/* Filters section */}
+        <div className="w-[280px] h-full bg-white/95 backdrop-blur-md border-r border-zinc-200/60 shadow-sm overflow-hidden flex flex-col">
+          {/* Filters */}
           <div className="px-4 pt-4 pb-3">
             <FilterBar
               sources={props.sources}
@@ -213,12 +228,12 @@ function DesktopSidebar(props: SidebarProps) {
 
           <div className="h-px bg-zinc-100 mx-4" />
 
-          {/* Layers section */}
-          <div className="flex-1 overflow-auto px-3 py-3">
-            <div className="flex items-center justify-between px-1 mb-2">
-              <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-widest">Couches</span>
+          {/* Layers */}
+          <div className="flex-1 overflow-auto px-4 py-2">
+            <span className="text-[10px] font-semibold text-zinc-300 uppercase tracking-widest">Couches</span>
+            <div className="mt-1">
+              <LayersSection {...props} />
             </div>
-            <LayersSection {...props} />
           </div>
 
           {/* Club detail */}

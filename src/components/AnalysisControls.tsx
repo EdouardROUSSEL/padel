@@ -4,6 +4,7 @@ import { AnalysisParams } from "@/hooks/useOpportunityAnalysis";
 
 interface SliderProps {
   label: string;
+  hint?: string;
   value: number;
   min: number;
   max: number;
@@ -12,12 +13,15 @@ interface SliderProps {
   onChange: (value: number) => void;
 }
 
-function Slider({ label, value, min, max, step, unit, onChange }: SliderProps) {
+function Slider({ label, hint, value, min, max, step, unit, onChange }: SliderProps) {
   const pct = ((value - min) / (max - min)) * 100;
   return (
     <div className="py-1">
-      <div className="flex items-center justify-between mb-1.5">
-        <span className="text-[11px] text-zinc-500">{label}</span>
+      <div className="flex items-center justify-between mb-1">
+        <div>
+          <span className="text-[11px] text-zinc-500">{label}</span>
+          {hint && <span className="text-[10px] text-zinc-300 ml-1">{hint}</span>}
+        </div>
         <span className="text-[11px] font-semibold text-zinc-800 tabular-nums bg-zinc-100 px-1.5 py-0.5 rounded">
           {value.toLocaleString()}{unit}
         </span>
@@ -52,9 +56,9 @@ interface WhiteCityControlsProps {
 
 export function WhiteCityControls({ params, onChange }: WhiteCityControlsProps) {
   return (
-    <div className="ml-11 mr-3 mb-2 px-3 py-2.5 rounded-xl bg-zinc-50 border border-zinc-100">
+    <div className="ml-1 mb-1 px-3 py-2 rounded-lg bg-zinc-50 space-y-0.5">
       <Slider
-        label="Population min."
+        label="Population min. de la ville"
         value={params.whiteCityMinPop}
         min={3000}
         max={50000}
@@ -63,7 +67,7 @@ export function WhiteCityControls({ params, onChange }: WhiteCityControlsProps) 
         onChange={(v) => onChange({ whiteCityMinPop: v })}
       />
       <Slider
-        label="Distance min. sans padel"
+        label="Aucun padel dans un rayon de"
         value={params.whiteCityMaxDist}
         min={5}
         max={50}
@@ -83,9 +87,9 @@ interface FricheControlsProps {
 
 export function FricheControls({ params, onChange }: FricheControlsProps) {
   return (
-    <div className="ml-11 mr-3 mb-2 px-3 py-2.5 rounded-xl bg-zinc-50 border border-zinc-100">
+    <div className="ml-1 mb-1 px-3 py-2 rounded-lg bg-zinc-50 space-y-0.5">
       <Slider
-        label="Surface min."
+        label="Surface min. du terrain"
         value={params.fricheMinSurface}
         min={200}
         max={5000}
@@ -94,7 +98,7 @@ export function FricheControls({ params, onChange }: FricheControlsProps) {
         onChange={(v) => onChange({ fricheMinSurface: v })}
       />
       <Slider
-        label="Distance min. padel"
+        label="Distance min. au padel le + proche"
         value={params.fricheMinDistPadel}
         min={0}
         max={50}
@@ -114,9 +118,10 @@ interface HeatmapControlsProps {
 
 export function HeatmapControls({ params, onChange }: HeatmapControlsProps) {
   return (
-    <div className="ml-11 mr-3 mb-2 px-3 py-2.5 rounded-xl bg-zinc-50 border border-zinc-100">
+    <div className="ml-1 mb-1 px-3 py-2 rounded-lg bg-zinc-50 space-y-0.5">
       <Slider
-        label="Rayon d'analyse"
+        label="Rayon de recherche des clubs"
+        hint="autour de chaque ville"
         value={params.heatmapRadius}
         min={5}
         max={50}
@@ -125,7 +130,7 @@ export function HeatmapControls({ params, onChange }: HeatmapControlsProps) {
         onChange={(v) => onChange({ heatmapRadius: v })}
       />
       <Slider
-        label="Population min."
+        label="Population min. de la ville"
         value={params.heatmapMinPop}
         min={1000}
         max={20000}
@@ -134,7 +139,8 @@ export function HeatmapControls({ params, onChange }: HeatmapControlsProps) {
         onChange={(v) => onChange({ heatmapMinPop: v })}
       />
       <Slider
-        label="Terrains/club (defaut)"
+        label="Terrains estimes par club"
+        hint="si inconnu"
         value={params.defaultCourtsPerClub}
         min={1}
         max={6}

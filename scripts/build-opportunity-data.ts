@@ -36,6 +36,26 @@ interface Friche {
   lng: number;
 }
 
+// Parse CSV line handling quoted fields with commas
+function parseCSVLine(line: string): string[] {
+  const fields: string[] = [];
+  let current = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      inQuotes = !inQuotes;
+    } else if (ch === ',' && !inQuotes) {
+      fields.push(current);
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  fields.push(current);
+  return fields;
+}
+
 function haversine(lat1: number, lng1: number, lat2: number, lng2: number): number {
   const R = 6371;
   const toRad = (d: number) => d * Math.PI / 180;
@@ -49,7 +69,7 @@ function haversine(lat1: number, lng1: number, lat2: number, lng2: number): numb
 function loadCommunes(): Commune[] {
   const content = readFileSync(join(DATA_DIR, 'communes-france-2025.csv'), 'utf-8');
   const lines = content.split('\n');
-  const header = lines[0].split(',');
+  const header = parseCSVLine(lines[0]);
   const idx = {
     code_postal: header.indexOf('code_postal'),
     code_insee: header.indexOf('code_insee'),
@@ -63,7 +83,7 @@ function loadCommunes(): Commune[] {
 
   const communes: Commune[] = [];
   for (let i = 1; i < lines.length; i++) {
-    const cols = lines[i].split(',');
+    const cols = parseCSVLine(lines[i]);
     if (cols.length < 10) continue;
     const pop = parseInt(cols[idx.population], 10);
     const lat = parseFloat(cols[idx.lat]);
@@ -220,10 +240,10 @@ function main() {
     if (dep && !dep.name) {
       // Find a header row with dep_nom
       const content = readFileSync(join(DATA_DIR, 'communes-france-2025.csv'), 'utf-8');
-      const header = content.split('\n')[0].split(',');
+      const header = parseCSVLine(content.split('\n')[0]);
       const depNomIdx = header.indexOf('dep_nom');
       for (const line of content.split('\n').slice(1)) {
-        const cols = line.split(',');
+        const cols = parseCSVLine(line);
         if (cols[header.indexOf('dep_code')] === c.dep_code && cols[depNomIdx]) {
           dep.name = cols[depNomIdx];
           break;
@@ -237,12 +257,12 @@ function main() {
   {
     const content = readFileSync(join(DATA_DIR, 'communes-france-2025.csv'), 'utf-8');
     const lines = content.split('\n');
-    const header = lines[0].split(',');
+    const header = parseCSVLine(lines[0]);
     const depCodeIdx = header.indexOf('dep_code');
     const depNomIdx = header.indexOf('dep_nom');
     const depNames = new Map<string, string>();
     for (let i = 1; i < lines.length; i++) {
-      const cols = lines[i].split(',');
+      const cols = parseCSVLine(lines[i]);
       if (cols[depCodeIdx] && !depNames.has(cols[depCodeIdx])) {
         depNames.set(cols[depCodeIdx], cols[depNomIdx]);
       }
@@ -335,7 +355,7 @@ function main() {
         region: city.reg_nom,
         lat: city.lat,
         lng: city.lng,
-        nearestPadelKm: parseFloat(nearest.toFixed(1)),
+        nearestPadelKm: isFinite(nearest) ? parseFloat(nearest.toFixed(1)) : 999,
       });
     }
   }
@@ -387,16 +407,18 @@ function main() {
   );
 
   // === DEFAULT HEATMAP DATA (computed with defaults, client will recompute) ===
+  // Only France metro (lat 41-52, lng -6 to 10) — DOM-TOM have 0 clubs and max-out the scale
   console.log('\nBuilding default heatmap points...');
   const heatmapPoints: Array<[number, number, number]> = [];
   for (const city of communes) {
     if (city.population < 5000) continue;
+    if (city.lat < 41 || city.lat > 52 || city.lng < -6 || city.lng > 10) continue;
     const nearby = courtsWithinRadius(city.lat, city.lng, 20);
     const totalCourts = nearby.reduce((sum, c) => sum + estimateCourts(c), 0);
     const weight = totalCourts === 0
       ? city.population / 10000
       : city.population / (totalCourts * 20000);
-    if (weight > 0.1) {
+    if (weight > 0.25) {
       heatmapPoints.push([city.lat, city.lng, Math.min(weight, 5)]);
     }
   }

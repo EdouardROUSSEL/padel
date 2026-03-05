@@ -38,8 +38,8 @@ export default function FilterBar({
   ];
 
   return (
-    <div className="space-y-3">
-      {/* Type segmented control */}
+    <div className="space-y-2.5">
+      {/* Sport toggle */}
       <div className="flex bg-zinc-100 rounded-lg p-0.5">
         <button
           onClick={() => onToggleType("padel")}
@@ -63,8 +63,8 @@ export default function FilterBar({
         </button>
       </div>
 
-      {/* Source chips */}
-      <div className="flex flex-wrap gap-1">
+      {/* Sources - compact inline */}
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         {visibleSources.map((source) => {
           const config = SOURCE_CONFIG[source];
           const count = sources[source]?.count || 0;
@@ -73,18 +73,16 @@ export default function FilterBar({
             <button
               key={source}
               onClick={() => onToggleSource(source)}
-              className={`inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
-                active
-                  ? "bg-zinc-50 text-zinc-700 ring-1 ring-zinc-200/80"
-                  : "text-zinc-300"
+              className={`inline-flex items-center gap-1 text-[11px] transition-colors ${
+                active ? "text-zinc-600" : "text-zinc-300"
               }`}
             >
               <span
-                className="w-1.5 h-1.5 rounded-full flex-shrink-0 transition-opacity"
-                style={{ backgroundColor: config.color, opacity: active ? 1 : 0.3 }}
+                className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                style={{ backgroundColor: config.color, opacity: active ? 1 : 0.25 }}
               />
               {config.label}
-              <span className="tabular-nums opacity-50">{count}</span>
+              <span className="tabular-nums opacity-40">{count}</span>
             </button>
           );
         })}

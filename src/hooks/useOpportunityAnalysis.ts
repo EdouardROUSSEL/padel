@@ -136,6 +136,8 @@ export function useOpportunityAnalysis(
 
     for (const city of communes) {
       if (city.p < params.heatmapMinPop) continue;
+      // Skip DOM-TOM (no clubs, max-out scale)
+      if (city.la < 41 || city.la > 52 || city.ln < -6 || city.ln > 10) continue;
 
       // Count courts within radius
       const gLat = Math.floor(city.la / gridSize);
@@ -160,7 +162,7 @@ export function useOpportunityAnalysis(
         totalCourts === 0
           ? city.p / 10000
           : city.p / (totalCourts * 20000);
-      if (weight > 0.1) {
+      if (weight > 0.25) {
         points.push([city.la, city.ln, Math.min(weight, 5)]);
       }
     }

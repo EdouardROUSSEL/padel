@@ -97,6 +97,10 @@ export default function Map({
     mapRef.current = L.map(mapContainerRef.current, {
       zoomControl: false,
       preferCanvas: true,
+      maxBounds: [[-10, -30], [72, 60]],
+      maxBoundsViscosity: 1.0,
+      minZoom: 4,
+      worldCopyJump: false,
     }).setView([46.6, 2.5], 6);
 
     L.control.zoom({ position: "topright" }).addTo(mapRef.current);
@@ -210,7 +214,7 @@ export default function Map({
 
     const group = L.layerGroup();
     whiteCities.forEach((city) => {
-      if (!city.lat || !city.lng || !isFinite(city.nearestPadelKm)) return;
+      if (!city.lat || !city.lng || city.nearestPadelKm == null || !isFinite(city.nearestPadelKm)) return;
       const radius = Math.max(10000, Math.min(30000, city.population * 0.4));
 
       // Outer glow ring
@@ -350,5 +354,21 @@ export default function Map({
     });
   }, [selectedCourt]);
 
-  return <div ref={mapContainerRef} className="w-full h-full" />;
+  return (
+    <div className="relative w-full h-full">
+      <div ref={mapContainerRef} className="w-full h-full" />
+      {showHeatmap && heatmapPoints.length > 0 && (
+        <div className="absolute bottom-6 right-3 z-[1000] bg-white/90 backdrop-blur-sm rounded-lg shadow-sm border border-zinc-200/60 px-3 py-2 pointer-events-none">
+          <div className="text-[10px] font-medium text-zinc-500 mb-1.5">Demande vs offre padel</div>
+          <div className="flex items-center gap-1.5">
+            <span className="text-[9px] text-zinc-400">Bien equipe</span>
+            <div className="w-20 h-2 rounded-full" style={{
+              background: "linear-gradient(to right, #22c55e, #eab308, #f97316, #ef4444, #991b1b)"
+            }} />
+            <span className="text-[9px] text-zinc-400">Sous-equipe</span>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
