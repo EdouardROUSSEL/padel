@@ -34,15 +34,15 @@ interface MergedData {
 
 const DATA_DIR = join(process.cwd(), 'data');
 
-// Sources to merge: raw files + cleaned google + FFT padel enriched
+// Sources to merge (ordered by court count reliability: padel-only sources first)
 const SOURCES = [
-  { path: 'raw/anybuddy.json', name: 'anybuddy' },
-  { path: 'raw/osm.json', name: 'osm' },
-  { path: 'raw/padelmagazine.json', name: 'padelmagazine' },
-  { path: 'raw/playtomic.json', name: 'playtomic' },
   { path: 'raw/tenup.json', name: 'tenup' },
+  { path: 'raw/anybuddy.json', name: 'anybuddy' },
+  { path: 'raw/playtomic.json', name: 'playtomic' },
+  { path: 'raw/padelmagazine.json', name: 'padelmagazine' },
   { path: 'raw/fft-padel-enriched.json', name: 'fft-padel' },
   { path: 'google_padel.json', name: 'google' },
+  { path: 'raw/osm.json', name: 'osm' },
 ];
 
 function loadDataFile(relativePath: string): DataFile | null {
@@ -91,6 +91,12 @@ const MERGE_DISTANCE_METERS = 100;
 // Extended distance for name-based matching
 const MERGE_DISTANCE_WITH_NAME_METERS = 500;
 
+// Court count priority: sources that report padel-only counts first
+// tenup/anybuddy/playtomic report padel courts only
+// fft-padel reports ALL courts (tennis + padel) → unreliable for padel count
+// google/osm have 0 most of the time
+const COURT_COUNT_SOURCE_PRIORITY = ['tenup', 'anybuddy', 'playtomic', 'padelmagazine', 'fft-padel', 'google', 'osm'];
+
 // Normalize name for comparison
 function normalizeName(name: string): string {
   return name
@@ -131,9 +137,31 @@ function areNamesSimilar(name1: string, name2: string): boolean {
   return false;
 }
 
+// Get priority rank for a source (lower = better for court counts)
+function getSourcePriority(source: string): number {
+  const idx = COURT_COUNT_SOURCE_PRIORITY.indexOf(source);
+  return idx === -1 ? 999 : idx;
+}
+
+// Get the best source for court counts from a source array
+function getBestCourtCountSource(sources: string[]): string {
+  let best = sources[0] || '';
+  let bestPriority = getSourcePriority(best);
+  for (const s of sources) {
+    const p = getSourcePriority(s);
+    if (p < bestPriority) {
+      best = s;
+      bestPriority = p;
+    }
+  }
+  return best;
+}
+
 function mergeCourts(allCourts: Court[]): Court[] {
   const mergedCourts: Court[] = [];
   const nameIndex: Map<string, number> = new Map();
+  // Track which source provided the court counts for each merged entry
+  const courtCountSource: Map<number, string> = new Map();
 
   for (const court of allCourts) {
     // Skip courts without valid coordinates
@@ -143,6 +171,7 @@ function mergeCourts(allCourts: Court[]): Court[] {
 
     // Normalize source to array
     court.source = normalizeSource(court.source as string | string[]);
+    const courtSource = court.source[0] || '';
 
     // First check by exact normalized name
     const normalizedName = normalizeName(court.name || '');
@@ -176,14 +205,22 @@ function mergeCourts(allCourts: Court[]): Court[] {
       if (!existing.imageUrl && court.imageUrl) existing.imageUrl = court.imageUrl;
       if (!existing.url && court.url) existing.url = court.url;
 
-      // Take max court counts
-      existing.totalCourts = Math.max(existing.totalCourts || 0, court.totalCourts || 0);
-      existing.indoorCourts = Math.max(existing.indoorCourts || 0, court.indoorCourts || 0);
-      existing.outdoorCourts = Math.max(existing.outdoorCourts || 0, court.outdoorCourts || 0);
+      // Court counts: use source with best priority (padel-only sources first)
+      const existingSource = courtCountSource.get(existingIndex) || '';
+      const existingPriority = getSourcePriority(existingSource);
+      const newPriority = getSourcePriority(courtSource);
+
+      if ((court.totalCourts || 0) > 0 && (newPriority < existingPriority || (existing.totalCourts || 0) === 0)) {
+        existing.totalCourts = court.totalCourts || 0;
+        existing.indoorCourts = court.indoorCourts || 0;
+        existing.outdoorCourts = court.outdoorCourts || 0;
+        courtCountSource.set(existingIndex, courtSource);
+      }
     } else {
       // Add new court
       const newIndex = mergedCourts.length;
       mergedCourts.push({ ...court });
+      courtCountSource.set(newIndex, courtSource);
       if (normalizedName.length > 0) {
         nameIndex.set(normalizedName, newIndex);
       }

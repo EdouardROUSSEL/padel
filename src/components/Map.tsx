@@ -1,42 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import "leaflet.markercluster";
+import "leaflet.markercluster/dist/MarkerCluster.css";
+import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import { PadelCourt } from "@/types";
-import { FRENCH_CITIES } from "@/lib/scrapers/french-cities";
 
-// Corsica rectangle
-const CORSICA_BOUNDS = {
-  minLat: 41.3,
-  maxLat: 43.0,
-  minLng: 8.5,
-  maxLng: 9.6,
-};
-
-// France + Belgium + Luxembourg polygon (user-drawn)
-const FRANCE_BELGIUM_POLYGON: [number, number][] = [
-  [51.45, 3.14], [50.99, 1.47], [50.18, 1.3], [49.85, 0.15], [49.41, -0.18],
-  [49.51, -0.97], [49.84, -1.08], [49.87, -2.15], [49.54, -2.15], [48.84, -1.76],
-  [49.05, -3.16], [48.75, -4.9], [47.92, -4.9], [47.64, -4.37], [47.2, -3.38],
-  [46.8, -2.7], [46.23, -2.18], [45.66, -1.76], [44.95, -1.71], [44.17, -1.58],
-  [43.6, -2], [43.23, -2.18], [42.86, -1.36], [42.55, 0.11], [42.42, 1.25],
-  [42.23, 3.47], [42.92, 3.45], [43.31, 4.04], [43.2, 4.75], [43, 5.47],
-  [42.88, 6.35], [43.15, 6.92], [43.52, 7.58], [43.85, 8.06], [44.37, 7.73],
-  [44.84, 7.32], [45.21, 7.32], [45.63, 7.45], [46.04, 7.49], [46.6, 7.29],
-  [46.65, 6.57], [47.01, 6.94], [47.29, 7.49], [47.69, 8.06], [48.3, 8],
-  [49.07, 8.48], [49.24, 7.89], [49.44, 7.12], [49.62, 6.69], [49.85, 6.72],
-  [50.01, 6.38], [50.18, 6.42], [50.38, 6.68], [50.63, 6.45], [50.81, 6.03],
-  [51, 5.97], [51.21, 5.98], [51.39, 5.57], [51.53, 5], [51.58, 4.28], [51.38, 3.85],
-];
-
-interface MapProps {
-  courts: PadelCourt[];
-  selectedCourt?: PadelCourt | null;
-  onSelectCourt?: (court: PadelCourt) => void;
-}
-
-// Source colors matching the design system
+// Source colors
 const sourceColors: Record<string, string> = {
   playtomic: "#0066FF",
   osm: "#16A34A",
@@ -51,51 +23,84 @@ const sourceColors: Record<string, string> = {
 
 const getMarkerColor = (court: PadelCourt): string => {
   if (court.source.length > 1) return sourceColors.multiple;
-  if (court.source.includes("playtomic")) return sourceColors.playtomic;
-  if (court.source.includes("osm")) return sourceColors.osm;
-  if (court.source.includes("google")) return sourceColors.google;
-  if (court.source.includes("tenup")) return sourceColors.tenup;
-  if (court.source.includes("padelmagazine")) return sourceColors.padelmagazine;
-  if (court.source.includes("anybuddy")) return sourceColors.anybuddy;
-  if (court.source.includes("fft-padel")) return sourceColors["fft-padel"];
-  if (court.source.includes("fft-tennis")) return sourceColors["fft-tennis"];
-  return "#71717A";
+  return sourceColors[court.source[0]] || "#71717A";
 };
 
 const getMarkerSize = (court: PadelCourt): number => {
-  if (court.totalCourts >= 8) return 10;
-  if (court.totalCourts >= 4) return 8;
+  if (court.totalCourts >= 8) return 9;
+  if (court.totalCourts >= 4) return 7;
   if (court.totalCourts >= 2) return 6;
   return 5;
 };
 
-// Clean map style (Carto Positron)
 const MAP_TILE_URL = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 const MAP_ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>';
 
-const SEARCH_RADIUS_KM = 30;
-const GRID_POINTS = FRENCH_CITIES;
+export interface WhiteCity {
+  name: string;
+  population: number;
+  department: string;
+  region: string;
+  lat: number;
+  lng: number;
+  nearestPadelKm: number;
+}
 
-export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) {
+export interface FrichePoint {
+  id: string;
+  nom: string;
+  type: string;
+  commune: string;
+  department: string;
+  surface: number;
+  lat: number;
+  lng: number;
+  nearestPadelKm: number;
+}
+
+interface MapProps {
+  courts: PadelCourt[];
+  selectedCourt?: PadelCourt | null;
+  onSelectCourt?: (court: PadelCourt) => void;
+  whiteCities?: WhiteCity[];
+  friches?: FrichePoint[];
+  heatmapPoints?: [number, number, number][];
+  showCourts?: boolean;
+  showWhiteCities?: boolean;
+  showFriches?: boolean;
+  showHeatmap?: boolean;
+}
+
+export default function Map({
+  courts,
+  selectedCourt,
+  onSelectCourt,
+  whiteCities = [],
+  friches = [],
+  heatmapPoints = [],
+  showCourts = true,
+  showWhiteCities = false,
+  showFriches = false,
+  showHeatmap = false,
+}: MapProps) {
   const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const markersRef = useRef<L.CircleMarker[]>([]);
-  const polygonsRef = useRef<L.Polygon[]>([]);
-  const gridCirclesRef = useRef<L.Circle[]>([]);
-  const showPolygons = false; // Zone cachée par défaut
-  const showGrid = false; // Grille cachée
+  const clusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
+  const whiteCityLayerRef = useRef<L.LayerGroup | null>(null);
+  const frichesLayerRef = useRef<L.LayerGroup | null>(null);
+  const heatLayerRef = useRef<L.Layer | null>(null);
 
+  // Initialize map
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
 
     mapRef.current = L.map(mapContainerRef.current, {
       zoomControl: false,
+      preferCanvas: true,
     }).setView([46.6, 2.5], 6);
 
-    // Add zoom control to top-right
     L.control.zoom({ position: "topright" }).addTo(mapRef.current);
 
-    // Clean tile layer
     L.tileLayer(MAP_TILE_URL, {
       attribution: MAP_ATTRIBUTION,
       maxZoom: 18,
@@ -107,63 +112,73 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
     };
   }, []);
 
-  // Draw search zone polygons
+  // Build popup HTML
+  const buildPopup = useCallback((court: PadelCourt) => {
+    const sourceDots = court.source
+      .map((s) => {
+        const color = sourceColors[s] || "#71717A";
+        return `<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${color}"></span>`;
+      })
+      .join("");
+
+    const courtsSection = court.totalCourts > 0
+      ? `<div style="display:flex;gap:8px;align-items:baseline;margin-top:6px">
+          <span style="font-size:20px;font-weight:700;color:#18181B;line-height:1">${court.totalCourts}</span>
+          <span style="font-size:10px;color:#A1A1AA;text-transform:uppercase;letter-spacing:0.5px">${court.type === "tennis" ? "tennis" : "padel"}</span>
+          ${court.indoorCourts > 0 ? `<span style="font-size:11px;color:#71717A">${court.indoorCourts} in</span>` : ""}
+          ${court.outdoorCourts > 0 ? `<span style="font-size:11px;color:#71717A">${court.outdoorCourts} out</span>` : ""}
+        </div>`
+      : "";
+
+    const deptInfo = court.department
+      ? `<div style="font-size:10px;color:#A1A1AA;margin-top:2px">${court.department} · ${court.population ? (court.population / 1000).toFixed(0) + "k hab." : ""}</div>`
+      : "";
+
+    return `<div style="padding:12px 14px;min-width:180px;max-width:260px">
+      <div style="font-weight:600;font-size:13px;color:#18181B;line-height:1.3">${court.name}</div>
+      <div style="font-size:11px;color:#71717A;margin-top:2px">${court.city}${court.postalCode ? " " + court.postalCode : ""}</div>
+      ${deptInfo}
+      ${courtsSection}
+      <div style="display:flex;gap:3px;margin-top:8px;padding-top:8px;border-top:1px solid #F4F4F5">
+        ${sourceDots}
+      </div>
+    </div>`;
+  }, []);
+
+  // Update court markers
   useEffect(() => {
     if (!mapRef.current) return;
 
-    // Clear existing shapes
-    polygonsRef.current.forEach((p) => p.remove());
-    polygonsRef.current = [];
-
-    if (showPolygons) {
-      const style = { color: "#0066FF", weight: 2, fillColor: "#0066FF", fillOpacity: 0.05 };
-
-      // France + Belgium + Luxembourg polygon
-      const mainPolygon = L.polygon(FRANCE_BELGIUM_POLYGON, style).addTo(mapRef.current);
-      polygonsRef.current.push(mainPolygon);
-
-      // Corsica rectangle
-      const corsicaRect = L.rectangle(
-        [[CORSICA_BOUNDS.minLat, CORSICA_BOUNDS.minLng], [CORSICA_BOUNDS.maxLat, CORSICA_BOUNDS.maxLng]],
-        style
-      ).addTo(mapRef.current);
-      polygonsRef.current.push(corsicaRect as unknown as L.Polygon);
+    if (clusterGroupRef.current) {
+      mapRef.current.removeLayer(clusterGroupRef.current);
+      clusterGroupRef.current = null;
     }
-  }, [showPolygons]);
 
-  // Draw grid circles (30km radius)
-  useEffect(() => {
-    if (!mapRef.current) return;
+    if (!showCourts) return;
 
-    // Clear existing grid circles
-    gridCirclesRef.current.forEach((c) => c.remove());
-    gridCirclesRef.current = [];
+    const clusterGroup = L.markerClusterGroup({
+      maxClusterRadius: 50,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true,
+      animate: true,
+      animateAddingMarkers: false,
+      disableClusteringAtZoom: 13,
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        let size = "small";
+        if (count > 50) size = "large";
+        else if (count > 20) size = "medium";
+        return L.divIcon({
+          html: `<div>${count}</div>`,
+          className: `marker-cluster marker-cluster-${size}`,
+          iconSize: L.point(40, 40),
+        });
+      },
+    });
 
-    if (showGrid) {
-      GRID_POINTS.forEach((point) => {
-        const circle = L.circle([point.lat, point.lng], {
-          radius: SEARCH_RADIUS_KM * 1000, // Convert km to meters
-          color: "#10B981",
-          weight: 1,
-          fillColor: "#10B981",
-          fillOpacity: 0.08,
-        }).addTo(mapRef.current!);
-        gridCirclesRef.current.push(circle);
-      });
-    }
-  }, [showGrid]);
-
-  useEffect(() => {
-    if (!mapRef.current) return;
-
-    // Clear existing markers
-    markersRef.current.forEach((marker) => marker.remove());
-    markersRef.current = [];
-
-    // Add markers
     courts.forEach((court) => {
       if (!court.lat || !court.lng) return;
-
       const marker = L.circleMarker([court.lat, court.lng], {
         radius: getMarkerSize(court),
         fillColor: getMarkerColor(court),
@@ -172,103 +187,168 @@ export default function Map({ courts, selectedCourt, onSelectCourt }: MapProps) 
         opacity: 1,
         fillOpacity: 0.85,
       });
-
-      // Clean popup
-      const sourceBadges = court.source
-        .map((s) => {
-          const colors: Record<string, string> = {
-            playtomic: "background:#0066FF",
-            osm: "background:#16A34A",
-            google: "background:#F59E0B",
-            tenup: "background:#8B5CF6",
-            padelmagazine: "background:#F43F5E",
-            anybuddy: "background:#EC4899",
-            "fft-padel": "background:#14B8A6",
-            "fft-tennis": "background:#F97316",
-          };
-          return `<span style="display:inline-block;width:6px;height:6px;border-radius:50%;${colors[s] || "background:#71717A"};margin-right:4px"></span>${s}`;
-        })
-        .join('<span style="margin:0 4px;color:#D4D4D8">·</span>');
-
-      const popupContent = `
-        <div style="font-family:var(--font-sans),system-ui,sans-serif;min-width:200px">
-          <div style="font-weight:600;font-size:14px;color:#18181B;margin-bottom:4px;line-height:1.3">${court.name}</div>
-          <div style="font-size:12px;color:#71717A;margin-bottom:10px">
-            ${court.address ? court.address + ", " : ""}${court.city}${court.postalCode ? " " + court.postalCode : ""}
-          </div>
-          ${court.totalCourts > 0 ? `
-            <div style="display:flex;gap:12px;padding:8px 0;border-top:1px solid #F4F4F5;border-bottom:1px solid #F4F4F5;margin-bottom:8px">
-              <div>
-                <div style="font-size:18px;font-weight:600;color:#18181B">${court.totalCourts}</div>
-                <div style="font-size:10px;color:#A1A1AA;text-transform:uppercase;letter-spacing:0.5px">terrains</div>
-              </div>
-              ${court.indoorCourts > 0 ? `
-                <div>
-                  <div style="font-size:18px;font-weight:600;color:#18181B">${court.indoorCourts}</div>
-                  <div style="font-size:10px;color:#A1A1AA;text-transform:uppercase;letter-spacing:0.5px">indoor</div>
-                </div>
-              ` : ""}
-              ${court.outdoorCourts > 0 ? `
-                <div>
-                  <div style="font-size:18px;font-weight:600;color:#18181B">${court.outdoorCourts}</div>
-                  <div style="font-size:10px;color:#A1A1AA;text-transform:uppercase;letter-spacing:0.5px">outdoor</div>
-                </div>
-              ` : ""}
-            </div>
-          ` : ""}
-          <div style="font-size:11px;color:#A1A1AA;display:flex;align-items:center">
-            ${sourceBadges}
-          </div>
-        </div>
-      `;
-
-      marker.bindPopup(popupContent, {
+      marker.bindPopup(buildPopup(court), {
         closeButton: false,
-        className: "clean-popup",
+        offset: L.point(0, -4),
       });
       marker.on("click", () => onSelectCourt?.(court));
-      marker.addTo(mapRef.current!);
-      markersRef.current.push(marker);
+      clusterGroup.addLayer(marker);
     });
-  }, [courts, onSelectCourt]);
 
+    mapRef.current.addLayer(clusterGroup);
+    clusterGroupRef.current = clusterGroup;
+  }, [courts, showCourts, onSelectCourt, buildPopup]);
+
+  // White cities layer
+  useEffect(() => {
+    if (!mapRef.current) return;
+    if (whiteCityLayerRef.current) {
+      mapRef.current.removeLayer(whiteCityLayerRef.current);
+      whiteCityLayerRef.current = null;
+    }
+    if (!showWhiteCities || whiteCities.length === 0) return;
+
+    const group = L.layerGroup();
+    whiteCities.forEach((city) => {
+      if (!city.lat || !city.lng || !isFinite(city.nearestPadelKm)) return;
+      const radius = Math.max(10000, Math.min(30000, city.population * 0.4));
+
+      // Outer glow ring
+      const glow = L.circle([city.lat, city.lng], {
+        radius: radius * 1.3,
+        color: "transparent",
+        weight: 0,
+        fillColor: "#EF4444",
+        fillOpacity: 0.06,
+        interactive: false,
+      });
+      group.addLayer(glow);
+
+      // Main circle
+      const circle = L.circle([city.lat, city.lng], {
+        radius,
+        color: "#DC2626",
+        weight: 2,
+        fillColor: "#EF4444",
+        fillOpacity: 0.2,
+        dashArray: "8 5",
+      });
+
+      // Center marker dot
+      const center = L.circleMarker([city.lat, city.lng], {
+        radius: 5,
+        fillColor: "#DC2626",
+        color: "#FFFFFF",
+        weight: 2,
+        fillOpacity: 1,
+      });
+
+      const tooltipContent = `<div style="padding:4px 2px">
+        <div style="font-weight:700;font-size:13px;color:#DC2626">${city.name}</div>
+        <div style="font-size:11px;color:#71717A;margin-top:2px">${(city.population / 1000).toFixed(0)}k hab. — Dept. ${city.department}</div>
+        <div style="font-size:12px;font-weight:600;color:#18181B;margin-top:4px">Padel le + proche : ${city.nearestPadelKm} km</div>
+      </div>`;
+
+      circle.bindTooltip(tooltipContent, { direction: "top", offset: L.point(0, -10) });
+      center.bindTooltip(tooltipContent, { direction: "top", offset: L.point(0, -8) });
+
+      group.addLayer(circle);
+      group.addLayer(center);
+    });
+    group.addTo(mapRef.current);
+    whiteCityLayerRef.current = group;
+  }, [showWhiteCities, whiteCities]);
+
+  // Friches layer
+  useEffect(() => {
+    if (!mapRef.current) return;
+    if (frichesLayerRef.current) {
+      mapRef.current.removeLayer(frichesLayerRef.current);
+      frichesLayerRef.current = null;
+    }
+    if (!showFriches || friches.length === 0) return;
+
+    const group = L.layerGroup();
+    const limited = friches.slice(0, 800);
+    limited.forEach((f) => {
+      if (!f.lat || !f.lng) return;
+      const size = Math.max(5, Math.min(14, Math.sqrt(f.surface) / 60));
+
+      // Outer glow
+      const glow = L.circleMarker([f.lat, f.lng], {
+        radius: size + 4,
+        fillColor: "#F59E0B",
+        color: "transparent",
+        weight: 0,
+        fillOpacity: 0.2,
+        interactive: false,
+      });
+      group.addLayer(glow);
+
+      // Main marker — diamond shaped via DivIcon for big friches, circle for small
+      const marker = L.circleMarker([f.lat, f.lng], {
+        radius: size,
+        fillColor: "#F59E0B",
+        color: "#FFFFFF",
+        weight: 2,
+        fillOpacity: 0.85,
+      });
+      marker.bindTooltip(
+        `<div style="padding:4px 2px">
+          <div style="font-weight:700;font-size:13px;color:#D97706">${f.nom}</div>
+          <div style="font-size:11px;color:#71717A;margin-top:2px">${f.commune} (${f.department})</div>
+          <div style="font-size:12px;font-weight:600;color:#18181B;margin-top:4px">${f.surface.toLocaleString()} m² — padel : ${f.nearestPadelKm} km</div>
+        </div>`,
+        { direction: "top", offset: L.point(0, -6) }
+      );
+      group.addLayer(marker);
+    });
+    group.addTo(mapRef.current);
+    frichesLayerRef.current = group;
+  }, [showFriches, friches]);
+
+  // Heatmap layer
+  useEffect(() => {
+    if (!mapRef.current) return;
+    if (heatLayerRef.current) {
+      mapRef.current.removeLayer(heatLayerRef.current);
+      heatLayerRef.current = null;
+    }
+    if (!showHeatmap || heatmapPoints.length === 0) return;
+
+    // Dynamic import for leaflet.heat (no types)
+    import("leaflet.heat").then(() => {
+      if (!mapRef.current) return;
+      // @ts-expect-error leaflet.heat extends L
+      const heat = L.heatLayer(heatmapPoints, {
+        radius: 40,
+        blur: 15,
+        maxZoom: 12,
+        max: 2.5,
+        minOpacity: 0.35,
+        gradient: {
+          0.0: "transparent",
+          0.15: "#22c55e80",
+          0.3: "#22c55e",
+          0.45: "#eab308",
+          0.6: "#f97316",
+          0.75: "#ef4444",
+          0.9: "#dc2626",
+          1.0: "#991b1b",
+        },
+      });
+      heat.addTo(mapRef.current);
+      heatLayerRef.current = heat;
+    });
+  }, [showHeatmap, heatmapPoints]);
+
+  // Handle selected court
   useEffect(() => {
     if (!mapRef.current || !selectedCourt) return;
-    mapRef.current.setView([selectedCourt.lat, selectedCourt.lng], 14);
+    mapRef.current.flyTo([selectedCourt.lat, selectedCourt.lng], 14, {
+      duration: 0.8,
+    });
   }, [selectedCourt]);
 
-  return (
-    <div className="relative w-full h-full">
-      <div ref={mapContainerRef} className="w-full h-full" />
-
-      {/* Legend - hidden on mobile, visible on tablet+ */}
-      <div className="hidden sm:block absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-zinc-100 z-[1000]">
-        <div className="text-[10px] font-medium text-zinc-400 uppercase tracking-wider mb-2">Légende</div>
-        <div className="space-y-1.5">
-          <LegendItem color={sourceColors.playtomic} label="Playtomic" />
-          <LegendItem color={sourceColors.osm} label="OpenStreetMap" />
-          <LegendItem color={sourceColors.google} label="Google" />
-          <LegendItem color={sourceColors.tenup} label="Ten'Up (FFT)" />
-          <LegendItem color={sourceColors.padelmagazine} label="PadelMagazine" />
-          <LegendItem color={sourceColors.anybuddy} label="Anybuddy" />
-          <LegendItem color={sourceColors["fft-padel"]} label="FFT Padel" />
-          <LegendItem color={sourceColors["fft-tennis"]} label="FFT Tennis" />
-          <LegendItem color={sourceColors.multiple} label="Multi-sources" />
-        </div>
-      </div>
-
-    </div>
-  );
-}
-
-function LegendItem({ color, label }: { color: string; label: string }) {
-  return (
-    <div className="flex items-center gap-2.5">
-      <span
-        className="w-2.5 h-2.5 rounded-full flex-shrink-0"
-        style={{ backgroundColor: color }}
-      />
-      <span className="text-xs text-zinc-600">{label}</span>
-    </div>
-  );
+  return <div ref={mapContainerRef} className="w-full h-full" />;
 }

@@ -10,6 +10,7 @@ export const dynamic = "force-dynamic";
 
 const MERGED_FILE = path.join(process.cwd(), "data", "merged.json");
 const TENNIS_FILE = path.join(process.cwd(), "data", "raw", "fft-tennis-enriched.json");
+const OPPORTUNITY_FILE = path.join(process.cwd(), "data", "opportunity.json");
 
 interface MergedData {
   generatedAt: string;
@@ -78,10 +79,22 @@ async function loadTennisData(): Promise<PadelCourt[]> {
   }
 }
 
+async function loadOpportunityData() {
+  if (!existsSync(OPPORTUNITY_FILE)) return null;
+  try {
+    const content = await readFileAsync(OPPORTUNITY_FILE, "utf-8");
+    return JSON.parse(content);
+  } catch (e) {
+    console.error("Error loading opportunity data:", e);
+    return null;
+  }
+}
+
 export async function GET() {
-  const [padelCourts, tennisCourts] = await Promise.all([
+  const [padelCourts, tennisCourts, opportunity] = await Promise.all([
     loadMergedData(),
     loadTennisData(),
+    loadOpportunityData(),
   ]);
 
   const allCourts = [...padelCourts, ...tennisCourts];
@@ -92,7 +105,8 @@ export async function GET() {
       sources: {},
       courts: [],
       counts: { padel: 0, tennis: 0 },
-      message: "Aucune donnée. Lancez: npx tsx scripts/merge-data.ts",
+      opportunity: null,
+      message: "Aucune donnee. Lancez: npx tsx scripts/merge-data.ts",
     });
   }
 
@@ -113,5 +127,6 @@ export async function GET() {
     sources,
     counts: { padel: padelCourts.length, tennis: tennisCourts.length },
     courts: allCourts,
+    opportunity: opportunity || null,
   });
 }

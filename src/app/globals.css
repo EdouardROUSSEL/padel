@@ -11,20 +11,29 @@
   --color-border-light: #F4F4F5;
 
   /* Accent */
-  --color-accent: #0066FF;
-  --color-accent-light: #E6F0FF;
+  --color-accent: #18181B;
+  --color-accent-light: #F4F4F5;
 
   /* Sources */
   --color-playtomic: #0066FF;
   --color-osm: #16A34A;
   --color-google: #F59E0B;
   --color-tenup: #8B5CF6;
+  --color-padelmagazine: #F43F5E;
+  --color-anybuddy: #EC4899;
+  --color-fft-padel: #14B8A6;
+  --color-fft-tennis: #F97316;
   --color-multiple: #18181B;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.05);
+
+  /* Sidebar */
+  --sidebar-width: 380px;
 }
 
 @theme inline {
@@ -48,8 +57,8 @@ body {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -68,29 +77,37 @@ body {
 /* Leaflet overrides */
 .leaflet-container {
   font-family: var(--font-sans), system-ui, sans-serif !important;
-  background: var(--color-bg) !important;
+  background: #f8fafc !important;
 }
 
 .leaflet-popup-content-wrapper {
   border-radius: 12px !important;
   box-shadow: var(--shadow-lg) !important;
   border: 1px solid var(--color-border-light) !important;
+  padding: 0 !important;
 }
 
 .leaflet-popup-content {
-  margin: 14px 16px !important;
+  margin: 0 !important;
   font-size: 13px !important;
   line-height: 1.5 !important;
 }
 
 .leaflet-popup-tip {
   box-shadow: none !important;
+  border: 1px solid var(--color-border-light) !important;
+  border-top: none !important;
+  border-left: none !important;
+}
+
+.leaflet-popup-close-button {
+  display: none !important;
 }
 
 .leaflet-control-zoom {
   border: none !important;
   box-shadow: var(--shadow-md) !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   overflow: hidden;
 }
 
@@ -98,9 +115,9 @@ body {
   background: var(--color-bg-card) !important;
   color: var(--color-text) !important;
   border: none !important;
-  width: 32px !important;
-  height: 32px !important;
-  line-height: 32px !important;
+  width: 34px !important;
+  height: 34px !important;
+  line-height: 34px !important;
   font-size: 16px !important;
 }
 
@@ -109,25 +126,107 @@ body {
 }
 
 .leaflet-control-attribution {
-  background: rgba(255,255,255,0.9) !important;
-  font-size: 10px !important;
-  padding: 2px 8px !important;
+  background: rgba(255,255,255,0.85) !important;
+  backdrop-filter: blur(4px);
+  font-size: 9px !important;
+  padding: 2px 6px !important;
   border-radius: 4px 0 0 0 !important;
+  color: var(--color-text-muted) !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--color-text-secondary) !important;
+}
+
+/* Marker cluster overrides */
+.marker-cluster {
+  background: transparent !important;
+}
+
+.marker-cluster div {
+  background: var(--color-accent) !important;
+  color: white !important;
+  font-family: var(--font-sans), system-ui, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  border-radius: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  text-align: center !important;
+  margin-left: -18px !important;
+  margin-top: -18px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+}
+
+.marker-cluster-small div {
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  margin-left: -15px !important;
+  margin-top: -15px !important;
+  font-size: 11px !important;
+  background: #52525B !important;
+}
+
+.marker-cluster-medium div {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  margin-left: -18px !important;
+  margin-top: -18px !important;
+  background: #27272A !important;
+}
+
+.marker-cluster-large div {
+  width: 42px !important;
+  height: 42px !important;
+  line-height: 42px !important;
+  margin-left: -21px !important;
+  margin-top: -21px !important;
+  font-size: 13px !important;
+  background: #18181B !important;
+}
+
+/* Bottom sheet drag handle */
+.bottom-sheet-handle {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-border);
+  margin: 8px auto;
+}
+
+/* Transitions */
+.transition-sidebar {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Number animations */
 @keyframes countUp {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-count {
-  animation: countUp 0.4s ease-out forwards;
+  animation: countUp 0.3s ease-out forwards;
 }
 
-/* Stagger delays */
-.stagger-1 { animation-delay: 0.05s; }
-.stagger-2 { animation-delay: 0.1s; }
-.stagger-3 { animation-delay: 0.15s; }
-.stagger-4 { animation-delay: 0.2s; }
-.stagger-5 { animation-delay: 0.25s; }
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out forwards;
+}
